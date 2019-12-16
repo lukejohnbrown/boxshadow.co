@@ -1,7 +1,10 @@
 import React from "react";
+import Layout from "../layouts";
 
 const BoxShadowCo = () => (
-  <p>Hello world!</p>
+  <Layout>
+
+  </Layout>
 );
 
 export default BoxShadowCo;

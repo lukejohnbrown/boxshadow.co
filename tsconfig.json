@@ -1,17 +1,26 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "esModuleInterop": true,
-        "outDir": "./dist/",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
         "skipLibCheck": true,
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "commonjs",
-        "target": "esnext",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "noEmit": true,
         "jsx": "react",
-        "lib": ["dom", "es2015", "es2017"]
+        "rootDirs": ["src", ".storybook"],
+        "baseUrl": "src",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "typeRoots": ["node_modules/@types", "src/@types"]
     },
-    "include": [
-        "./src/**/*"
-    ]
+    "files": ["src/@types/graphql.d.ts", "src/@types/global.d.ts"],
+    "include": ["src", ".storybook"],
+    "exclude": ["**/node_modules", "**/*.d.ts"]
 }
