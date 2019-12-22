@@ -13,6 +13,6 @@ export const TopbarWrapper = styled.header`
   }
 
   img {
-    width: 160px;
+    width: 180px;
   }
 `

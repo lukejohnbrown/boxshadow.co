@@ -6,5 +6,5 @@ export const OverlayWrapper = styled.div`
   width: 100%;
   height: 100%;
   background: ${theme.palette.blue[900]};
-  opacity: 0.7;
+  opactiy: 0.7;
 `;
