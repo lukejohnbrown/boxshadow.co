@@ -27,7 +27,8 @@
     "develop": "gatsby develop",
     "start": "yarn develop",
     "format": "prettier --parser typescript --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.ts*\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "component": "mkdir src/components/$NAME && cd src/components/$NAME && touch $NAME.tsx && touch index.ts && touch styles.ts && echo \"export { default } from './$NAME';\" >> index.ts && echo \"import styled from 'styled-components'; >> styles.ts\""
   },
   "devDependencies": {
     "@types/node": "^12.12.18",
