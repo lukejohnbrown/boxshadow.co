@@ -5,7 +5,6 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   width: 100%;
   display: block;
   background: ${theme.palette.grey[200]};
-  border-right: 2px solid ${theme.palette.grey[400]};
   min-height: 100vh;
   max-height: 100%;
   overflow: scroll;
@@ -19,13 +18,14 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   transition: all 200ms ease-in-out;
   z-index: 2;
 
-  @media ${theme.breakpoints.up.md} {
+  @media ${theme.breakpoints.up.lg} {
     transform: none;
+    border-right: 2px solid ${theme.palette.grey[400]};
   }
 `;
 
 export const Logo = styled.img`
-  @media ${theme.breakpoints.down.md} {
+  @media ${theme.breakpoints.down.lg} {
     display: none;
   }
 
@@ -68,7 +68,7 @@ export const InnerWrapper = styled.div`
 `;
 
 export const AboutBlockWrapper = styled.article`
-  @media ${theme.breakpoints.down.md} {
+  @media ${theme.breakpoints.down.lg} {
     display: none;
   }
 

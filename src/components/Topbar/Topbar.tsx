@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 import logo from "../../images/logo.svg";
-import { TopbarWrapper } from "./styles";
+import { TopBarWrapper } from "./styles";
 
-const Topbar = () => {
+const TopBar = () => {
   return (
-    <TopbarWrapper>
+    <TopBarWrapper>
       <img src={logo} alt="Boxshadows.co" />
-    </TopbarWrapper>
+    </TopBarWrapper>
   )
 }
 
-export default Topbar;
+export default TopBar;

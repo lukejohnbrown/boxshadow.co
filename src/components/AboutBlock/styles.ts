@@ -2,7 +2,7 @@ import styled from "styled-components"
 import theme from "../../theme";
 
 export const AboutBlockWrapper = styled.article`
-  @media ${theme.breakpoints.down.md} {
+  @media ${theme.breakpoints.down.lg} {
     text-align:center;
   }
 
@@ -17,7 +17,7 @@ export const AboutBlockWrapper = styled.article`
   }
 
   a {
-    @media ${theme.breakpoints.down.md} {
+    @media ${theme.breakpoints.down.lg} {
       justify-content: center;
     }
 

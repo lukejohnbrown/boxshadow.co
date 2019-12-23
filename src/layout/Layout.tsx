@@ -6,7 +6,7 @@ import theme from "../theme";
 import GlobalStyle from "./GlobalStyle";
 import Sidebar from "./Sidebar";
 import { useSidebar } from "./Sidebar/SidebarProvider"
-import { Topbar, Overlay } from "../components";
+import { TopBar, Overlay } from "../components";
 
 type FilterItem = {
   id: string;
@@ -83,7 +83,7 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
 
       {isSidebarOpen && <Overlay />}
 
-      <Topbar />
+      <TopBar />
 
       <Sidebar
         filters={filters}

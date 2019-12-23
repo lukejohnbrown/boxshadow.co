@@ -2,7 +2,7 @@ import styled from "styled-components";
 import theme from "../../theme";
 
 export const AboutBlockWrapper = styled.div`
-  @media ${theme.breakpoints.up.md} {
+  @media ${theme.breakpoints.up.lg} {
     display: none;
   }
 
@@ -12,6 +12,10 @@ export const AboutBlockWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @media ${theme.breakpoints.up.md} {
+    max-width: 400px;
+  }
 `;
 
 export const FilterButton = styled.button`
@@ -29,4 +33,20 @@ export const FilterButton = styled.button`
     background: ${theme.palette.grey[300]};
     border: 2px solid ${theme.palette.grey[500]};
   }
+`;
+
+export const HomeWrapper = styled.div`
+  background: ${theme.palette.grey[100]};
+  min-height: 100vh;
+  @media ${theme.breakpoints.up.lg} {
+    padding-left: 300px;
+  }
+`
+
+export const TitleBarWrapper = styled.div`
+  @media ${theme.breakpoints.down.lg} {
+    display: none;
+  }
+
+  padding: ${theme.space[5]} ${theme.space[7]};
 `;
