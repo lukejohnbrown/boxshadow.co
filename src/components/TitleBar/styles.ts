@@ -13,6 +13,14 @@ export const TitleBarWrapper = styled.h2`
   strong {
     margin: 0 ${theme.space[2]};
     font-weight: 500;
+
+    @media ${theme.breakpoints.up.md} {
+      margin: 0 ${theme.space[2]} 0 ${theme.space[3]};
+    }
+
+    @media ${theme.breakpoints.up.lg} {
+      margin: 0 ${theme.space[2]} 0 30px;
+    }
   }
 
   img { /* arrow icon */
@@ -33,4 +41,4 @@ export const TitleBarWrapper = styled.h2`
       transform: translateY(3px);
     }
   }
-`;
+`

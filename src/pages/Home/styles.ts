@@ -7,7 +7,7 @@ export const AboutBlockWrapper = styled.div`
   }
 
   padding: ${theme.space[5]} ${theme.space[2]};
-  max-width: 360px;
+  max-width: 440px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -48,5 +48,5 @@ export const TitleBarWrapper = styled.div`
     display: none;
   }
 
-  padding: ${theme.space[5]} ${theme.space[7]};
+  padding: ${theme.space[5]} ${theme.space[6]};
 `;

@@ -10,8 +10,8 @@ type ShadowStatsProps = {
 const ShadowStats: React.FC<ShadowStatsProps> = ({ shadowStats }) => {
   return (
     <ShadowStatsWrapper>
-      {shadowStats.map(({ statTitle, statDetail }: ShadowStatType) => (
-        <ShadowStat statTitle={statTitle} statDetail={statDetail} />
+      {shadowStats.map(({ statTitle, statDetail }: ShadowStatType, idx) => (
+        <ShadowStat key={idx} statTitle={statTitle} statDetail={statDetail} />
       ))}
     </ShadowStatsWrapper>
   )

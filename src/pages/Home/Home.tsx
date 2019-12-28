@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../../layout"
 import { useSidebar } from "../../layout/Sidebar/SidebarProvider"
-import { AboutBlock, TitleBar, ShadowItem } from "../../components";
+import { AboutBlock, TitleBar, ShadowsContainer } from "../../components";
 import {
   AboutBlockWrapper,
   FilterButton,
@@ -23,12 +23,8 @@ const Home: React.FC = () => {
         <TitleBarWrapper>
           <TitleBar />
         </TitleBarWrapper>
-        <div>
-          <ShadowItem />
-          <ShadowItem />
-          <ShadowItem />
-          <ShadowItem />
-        </div>
+
+        <ShadowsContainer />
       </HomeWrapper>
     </Layout>
   )

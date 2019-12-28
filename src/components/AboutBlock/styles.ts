@@ -13,7 +13,7 @@ export const AboutBlockWrapper = styled.article`
   }
 
   p {
-    margin-top: ${theme.space[1]};
+    margin-top: ${theme.space[2]};
   }
 
   a {

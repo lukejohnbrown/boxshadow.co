@@ -5,7 +5,7 @@ export const ShadowItemWrapper = styled.div`
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   background: ${theme.palette.grey[100]};
   border-radius: 8px;
-  padding: ${theme.space[5]};
+  padding: ${theme.space[4]};
   .shadowitem__button {
     width: 100%;
     margin-top: ${theme.space[3]};

@@ -4,5 +4,6 @@ export { default as TopBar } from "./TopBar";
 export { default as Overlay } from "./Overlay";
 export { default as TitleBar } from "./TitleBar";
 export { default as ShadowItem } from "./ShadowItem";
+export { default as ShadowsContainer } from "./ShadowsContainer";
 export { default as Button } from "./Button";
 

@@ -16,6 +16,18 @@ const ShadowItem: React.FC = () => {
         {
           statTitle: "Alpha",
           statDetail: "0.25"
+        },
+        {
+          statTitle: "Blur",
+          statDetail: "25%"
+        },
+        {
+          statTitle: "X Value",
+          statDetail: "003px"
+        },
+        {
+          statTitle: "Y Value",
+          statDetail: "003px"
         }
       ]} />
       <Button className="shadowitem__button" onClick={() => {}}>Copy CSS</Button>
