@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../../layout"
 import { useSidebar } from "../../layout/Sidebar/SidebarProvider"
-import { AboutBlock, TitleBar } from "../../components";
+import { AboutBlock, TitleBar, ShadowItem } from "../../components";
 import {
   AboutBlockWrapper,
   FilterButton,
@@ -9,7 +9,7 @@ import {
   TitleBarWrapper,
 } from "./styles"
 
-const Home = () => {
+const Home: React.FC = () => {
   const { toggleSidebar } = useSidebar();
 
   return (
@@ -23,6 +23,12 @@ const Home = () => {
         <TitleBarWrapper>
           <TitleBar />
         </TitleBarWrapper>
+        <div>
+          <ShadowItem />
+          <ShadowItem />
+          <ShadowItem />
+          <ShadowItem />
+        </div>
       </HomeWrapper>
     </Layout>
   )

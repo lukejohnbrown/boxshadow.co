@@ -3,6 +3,11 @@
     "extends": [
         "tslint:recommended"
     ],
+    "typedef": [
+        true,
+        "call-signature",
+        "property-declaration"
+    ],
     "jsRules": {},
     "rules": {
         "interface-name": [ "never-prefix" ],

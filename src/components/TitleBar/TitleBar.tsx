@@ -2,7 +2,7 @@ import React from 'react'
 import { TitleBarWrapper } from "./styles";
 import arrowIcon from "../../images/arrow-icon.svg";
 
-const TitleBar = () => {
+const TitleBar: React.FC = () => {
   return (
     <TitleBarWrapper>
       <img src={arrowIcon} alt="" />

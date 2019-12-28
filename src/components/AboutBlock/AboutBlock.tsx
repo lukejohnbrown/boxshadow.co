@@ -2,7 +2,7 @@ import React from 'react'
 import heartIcon from "../../images/heart-icon.svg"
 import { AboutBlockWrapper } from "./styles";
 
-export const AboutBlock = () => {
+export const AboutBlock: React.FC = () => {
   return (
     <AboutBlockWrapper>
       <h1>CSS box shadows for your next project 🎉</h1>
