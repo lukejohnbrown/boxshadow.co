@@ -10,6 +10,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "gatsby": "^2.18.12",
     "gatsby-link": "^2.2.27",
+    "gatsby-plugin-graphql-codegen": "^2.0.1",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-typescript": "^2.1.23",
     "gatsby-source-filesystem": "^2.1.43",
@@ -17,7 +18,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "typescript": "^3.7.4"
   },
   "keywords": [
     "gatsby, typescript"

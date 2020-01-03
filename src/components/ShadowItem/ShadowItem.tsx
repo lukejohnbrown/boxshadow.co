@@ -2,35 +2,49 @@ import React from 'react'
 import { ShadowItemWrapper, Title, Subtitle, StatsWrapper } from "./styles"
 import ShadowStats from "./ShadowStats";
 import { Button } from "..";
+import { ShadowsJson } from "../../types/graphql";
 
-const ShadowItem: React.FC = () => {
+
+const ShadowItem: React.FC<ShadowsJson> = ({
+  shadowTitle,
+  shadowSubCategoryID,
+  color,
+  alpha,
+  blur,
+  xValue,
+  yValue,
+}) => {
   return (
     <ShadowItemWrapper>
-      <Title>Material 01</Title>
-      <Subtitle>Subtle shadow</Subtitle>
-      <ShadowStats shadowStats={[
-        {
-          statTitle: "Color",
-          statDetail: "#000000"
-        },
-        {
-          statTitle: "Alpha",
-          statDetail: "0.25"
-        },
-        {
-          statTitle: "Blur",
-          statDetail: "25%"
-        },
-        {
-          statTitle: "X Value",
-          statDetail: "003px"
-        },
-        {
-          statTitle: "Y Value",
-          statDetail: "003px"
-        }
-      ]} />
-      <Button className="shadowitem__button" onClick={() => {}}>Copy CSS</Button>
+      <Title>{shadowTitle}</Title>
+      <Subtitle>TODO: GET CATEGORY TITLE BY ID</Subtitle>
+      <ShadowStats
+        shadowStats={[
+          {
+            statTitle: "Color",
+            statDetail: color,
+          },
+          {
+            statTitle: "Alpha",
+            statDetail: alpha,
+          },
+          {
+            statTitle: "Blur",
+            statDetail: blur,
+          },
+          {
+            statTitle: "X Value",
+            statDetail: xValue,
+          },
+          {
+            statTitle: "Y Value",
+            statDetail: yValue,
+          },
+        ]}
+      />
+      <Button className="shadowitem__button" onClick={() => {}}>
+        Copy CSS
+      </Button>
     </ShadowItemWrapper>
   )
 }

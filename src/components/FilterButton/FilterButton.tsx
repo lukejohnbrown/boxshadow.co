@@ -4,7 +4,7 @@ import { FilterButtonWrapper } from "./styles";
 export type FilterButtonProps = {
   id: string;
   isActive?: boolean;
-  text?: string;
+  text?: string | null;
   secondaryText?: string;
   onClick?: (id: string) => void;
 }

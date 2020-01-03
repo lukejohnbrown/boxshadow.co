@@ -1,9 +1,12 @@
 import React from "react";
+import { StaticQuery } from "gatsby"
 import { FilterButton } from "../../components";
 import logo from "../../images/logo.svg";
 import SidebarButton from "./SidebarButton";
 import { useSidebar } from "./SidebarProvider";
 import { AboutBlock } from "../../components";
+import { useShadowCategories, useShadows, useShadowSubCategories } from "../../hooks";
+import { ShadowsJson } from "../../types/graphql";
 import {
   FilterBlock,
   Filters,
@@ -27,30 +30,65 @@ export type SidebarProps = {
   onFilterClick?: (id: string) => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ filters, selectedFilters, onFilterClick }) => {
+const getShadowCountForCategory = (shadows: ShadowsJson[], categoryID: ShadowsJson["shadowCategoryID"]) =>
+  shadows.filter(({ shadowCategoryID }) => shadowCategoryID === categoryID)
+    .length
+
+const getShadowCountForSubCategory = (
+  shadows: ShadowsJson[],
+  subCategoryID: ShadowsJson["shadowSubCategoryID"]
+) =>
+  shadows.filter(
+    ({ shadowSubCategoryID }) => shadowSubCategoryID === subCategoryID
+  ).length
+
+const Sidebar: React.FC<SidebarProps> = () => {
   const { isSidebarOpen } = useSidebar();
+  const categories = useShadowCategories();
+  const subCategories = useShadowSubCategories()
+  const shadows = useShadows();
+
   return (
     <SidebarWrapper isSidebarOpen={isSidebarOpen}>
       <Logo src={logo} />
 
       <InnerWrapper>
-        <Filters>
-          {filters?.map(({ title, items }) => (
-            <FilterBlock key={title}>
-              <FilterTitle>{title}</FilterTitle>
-              {items.map(({ id, title, count }) => (
+        {categories && shadows && (
+          <Filters>
+            <FilterBlock>
+              <FilterTitle>Box Shadow Style</FilterTitle>
+              {categories.map(({ categoryID, categoryTitle }) => (
                 <FilterButton
-                  key={id}
-                  id={id}
-                  text={title}
-                  onClick={onFilterClick}
-                  secondaryText={count.toString()}
-                  isActive={selectedFilters?.includes(id)}
+                  key={categoryID as string}
+                  id={categoryID as string}
+                  text={categoryTitle}
+                  onClick={() => {}}
+                  secondaryText={getShadowCountForCategory(
+                    shadows,
+                    categoryID
+                  ).toString()}
+                  isActive
                 />
               ))}
             </FilterBlock>
-          ))}
-        </Filters>
+            <FilterBlock>
+              <FilterTitle>Design Library</FilterTitle>
+              {subCategories.map(({ subCategoryID, subCategoryTitle }) => (
+                <FilterButton
+                  key={subCategoryID as string}
+                  id={subCategoryID as string}
+                  text={subCategoryTitle}
+                  onClick={() => {}}
+                  secondaryText={getShadowCountForSubCategory(
+                    shadows,
+                    subCategoryID
+                  ).toString()}
+                  isActive
+                />
+              ))}
+            </FilterBlock>
+          </Filters>
+        )}
         <AboutBlockWrapper>
           <AboutBlock />
         </AboutBlockWrapper>

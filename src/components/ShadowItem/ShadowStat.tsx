@@ -3,7 +3,7 @@ import { ShadowStatWrapper } from "./styles";
 
 export type ShadowStat = {
   statTitle: string;
-  statDetail: string;
+  statDetail?: string | null;
 }
 
 const ShadowStat: React.FC<ShadowStat> = ({ statTitle, statDetail }) => {

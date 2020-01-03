@@ -16,7 +16,7 @@
     "alpha": "0.25",
     "blur": "005px",
     "xValue": "003px",
-    "yValue": "003px"
+    "yValue": "100px"
   }, {
     "shadowTitle": "Test Shadow 001",
     "shadowCategoryID": "0",
