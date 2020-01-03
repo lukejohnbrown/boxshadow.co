@@ -4,7 +4,7 @@ import theme from "../../theme";
 export const ShadowsContainerWrapper = styled.div`
   background: white;
   padding: ${theme.space[4]} ${theme.space[3]};
-  border: 1px solid ${theme.palette.grey[400]};
+  border: 2px solid ${theme.palette.grey[400]};
 
   @media ${theme.breakpoints.up.sm} {
     padding: ${theme.space[4]};
