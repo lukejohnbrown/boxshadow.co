@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../layout"
-import { useSidebar } from "../../layout/Sidebar/SidebarProvider"
+import { useSidebar } from "../../SidebarProvider"
 import { AboutBlock, TitleBar, ShadowsContainer } from "../../components";
 import {
   AboutBlockWrapper,

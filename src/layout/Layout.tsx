@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "../theme";
 import GlobalStyle from "./GlobalStyle";
 import Sidebar from "./Sidebar";
-import { useSidebar } from "./Sidebar/SidebarProvider"
+import { useSidebar } from "../SidebarProvider"
 import { TopBar, Overlay } from "../components";
 
 type FilterItem = {

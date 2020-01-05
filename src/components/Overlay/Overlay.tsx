@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSidebar } from "../../layout/Sidebar/SidebarProvider";
+import { useSidebar } from "../../SidebarProvider";
 import { OverlayWrapper } from "./styles";
 
 const Overlay: React.FC = () => {

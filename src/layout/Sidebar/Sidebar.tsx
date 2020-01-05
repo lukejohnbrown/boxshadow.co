@@ -3,7 +3,7 @@ import { StaticQuery } from "gatsby"
 import { FilterButton } from "../../components";
 import logo from "../../images/logo.svg";
 import SidebarButton from "./SidebarButton";
-import { useSidebar } from "./SidebarProvider";
+import { useSidebar } from "../../SidebarProvider";
 import { AboutBlock } from "../../components";
 import { useShadowCategories, useShadows, useShadowSubCategories } from "../../hooks";
 import { ShadowsJson } from "../../types/graphql";
@@ -30,10 +30,12 @@ export type SidebarProps = {
   onFilterClick?: (id: string) => void;
 }
 
+// TODO move this to util function
 const getShadowCountForCategory = (shadows: ShadowsJson[], categoryID: ShadowsJson["shadowCategoryID"]) =>
   shadows.filter(({ shadowCategoryID }) => shadowCategoryID === categoryID)
     .length
 
+// TODO move this to util function
 const getShadowCountForSubCategory = (
   shadows: ShadowsJson[],
   subCategoryID: ShadowsJson["shadowSubCategoryID"]
