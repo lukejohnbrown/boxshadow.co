@@ -21,6 +21,7 @@ export const Title = styled.h3`
 export const Subtitle = styled.h4`
   color: ${theme.palette.grey[500]};
   margin-bottom: ${theme.space[3]};
+  height: 25px;
 `;
 
 export const StatsWrapper = styled.ul`

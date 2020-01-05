@@ -2,8 +2,12 @@ import React from 'react'
 import { ShadowItemWrapper, Title, Subtitle, StatsWrapper } from "./styles"
 import ShadowStats from "./ShadowStats";
 import { Button } from "..";
-import { ShadowsJson } from "../../types/graphql";
+import { useShadowSubCategories } from "../../hooks";
+import { ShadowsJson, SubCategoriesJson } from "../../types/graphql";
 
+// TODO move this to util function
+const getSubCategoryByID = (subCategories: SubCategoriesJson[], shadowSubCategoryID: ShadowsJson["shadowSubCategoryID"]) =>
+  subCategories.find(({ subCategoryID }) => shadowSubCategoryID === subCategoryID);
 
 const ShadowItem: React.FC<ShadowsJson> = ({
   shadowTitle,
@@ -14,10 +18,13 @@ const ShadowItem: React.FC<ShadowsJson> = ({
   xValue,
   yValue,
 }) => {
+  const subCategories = useShadowSubCategories();
+  const shadowSubCategory = getSubCategoryByID(subCategories, shadowSubCategoryID);
+
   return (
     <ShadowItemWrapper>
       <Title>{shadowTitle}</Title>
-      <Subtitle>TODO: GET CATEGORY TITLE BY ID</Subtitle>
+      <Subtitle>{shadowSubCategory ? shadowSubCategory.subCategoryTitle : ""}</Subtitle>
       <ShadowStats
         shadowStats={[
           {

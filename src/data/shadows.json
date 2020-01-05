@@ -11,7 +11,7 @@
   }, {
     "shadowTitle": "Test Shadow 001",
     "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
+    "shadowSubCategoryID": null,
     "color": "#000000",
     "alpha": "0.25",
     "blur": "005px",
