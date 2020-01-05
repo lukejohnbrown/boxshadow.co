@@ -7,6 +7,7 @@ export const useShadows = (): ShadowsJson[] => {
       query Shadows {
         allShadowsJson {
           nodes {
+            id
             shadowTitle
             shadowCategoryID
             shadowSubCategoryID

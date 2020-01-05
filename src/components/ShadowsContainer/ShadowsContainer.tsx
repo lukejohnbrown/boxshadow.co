@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import {
   ShadowsContainerWrapper,
   ShadowsContainerTitle,
@@ -20,10 +20,11 @@ const constructShadowsByCategory = (
 ) =>
   categories.map(({ categoryTitle, categoryID }) => ({
     categoryTitle: categoryTitle,
+    categoryID: categoryID,
     shadows: shadows.filter(
       ({ shadowCategoryID }) => shadowCategoryID === categoryID
     ),
-  }));
+  }))
 
 const ShadowsContainer = () => {
   const shadows = useShadows();
@@ -31,19 +32,21 @@ const ShadowsContainer = () => {
 
   return (
     <ShadowsContainerWrapper>
-      {constructShadowsByCategory(shadows, categories).map(({ categoryTitle, shadows }) => (
-        <>
-          <ShadowsContainerTitle>{categoryTitle}</ShadowsContainerTitle>
+      {constructShadowsByCategory(shadows, categories).map(
+        ({ categoryTitle, categoryID, shadows }) => (
+          <Fragment key={categoryID as string}>
+            <ShadowsContainerTitle>{categoryTitle}</ShadowsContainerTitle>
 
-          <ShadowItemsWrapper>
-            {shadows.map(shadow => (
-              <ShadowItemWrapper>
-                <ShadowItem {...shadow} />
-              </ShadowItemWrapper>
-            ))}
-          </ShadowItemsWrapper>
-        </>
-      ))}
+            <ShadowItemsWrapper>
+              {shadows.map(shadow => (
+                <ShadowItemWrapper key={shadow.id}>
+                  <ShadowItem {...shadow} />
+                </ShadowItemWrapper>
+              ))}
+            </ShadowItemsWrapper>
+          </Fragment>
+        )
+      )}
     </ShadowsContainerWrapper>
   )
 }

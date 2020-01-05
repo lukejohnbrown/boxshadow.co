@@ -6,7 +6,7 @@ export type FilterButtonProps = {
   isActive?: boolean;
   text?: string | null;
   secondaryText?: string;
-  onClick?: (id: string) => void;
+  onClick?: (value: any) => void;
 }
 
 const FilterButton: React.FC<FilterButtonProps> = ({ id, isActive = false, text, secondaryText, onClick }) => (

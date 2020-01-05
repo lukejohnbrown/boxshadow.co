@@ -1,12 +1,13 @@
-import React from "react";
-import { StaticQuery } from "gatsby"
+import React, { useState } from "react";
+import xor from "lodash.xor";
 import { FilterButton } from "../../components";
 import logo from "../../images/logo.svg";
 import SidebarButton from "./SidebarButton";
 import { useSidebar } from "../../SidebarProvider";
+import { useFilters } from "../../FiltersProvider";
 import { AboutBlock } from "../../components";
 import { useShadowCategories, useShadows, useShadowSubCategories } from "../../hooks";
-import { ShadowsJson } from "../../types/graphql";
+import { ShadowsJson, CategoriesJson, SubCategoriesJson } from "../../types/graphql";
 import {
   FilterBlock,
   Filters,
@@ -42,13 +43,50 @@ const getShadowCountForSubCategory = (
 ) =>
   shadows.filter(
     ({ shadowSubCategoryID }) => shadowSubCategoryID === subCategoryID
-  ).length
+  ).length;
+
+// TODO move this to util function
+const getAllCategoryIDs = (allCategories: CategoriesJson[]) =>
+  allCategories.map(({ categoryID }) => categoryID);
+
+// TODO move this to util function
+const getAllSubCategoryIDs = (allSubCategories: SubCategoriesJson[]) =>
+  allSubCategories.map(({ subCategoryID }) => subCategoryID);
 
 const Sidebar: React.FC<SidebarProps> = () => {
   const { isSidebarOpen } = useSidebar();
+  const {
+    categoryFilters,
+    setCategoryFilters,
+    subCategoryFilters,
+    setSubCategoryFilters,
+  } = useFilters();
   const categories = useShadowCategories();
-  const subCategories = useShadowSubCategories()
+  const subCategories = useShadowSubCategories();
   const shadows = useShadows();
+
+  const [categoryFiltersTouched, setCategoryFiltersTouched] = useState(false);
+  const [subCategoryFiltersTouched, setSubCategoryFiltersTouched] = useState(false);
+
+  const handleCategoryClick = (categoryID: CategoriesJson["categoryID"]) => {
+    if (!categoryFiltersTouched) {
+      setCategoryFilters(xor(getAllCategoryIDs(categories), [categoryID]));
+      setCategoryFiltersTouched(true);
+    } else {
+      setCategoryFilters(xor(categoryFilters, [categoryID]))
+    }
+  }
+
+  const handleSubCategoryClick = (subCategoryID: SubCategoriesJson["subCategoryID"]) => {
+    if (!subCategoryFiltersTouched) {
+      setSubCategoryFilters(
+        xor(getAllSubCategoryIDs(subCategories), [subCategoryID])
+      );
+      setSubCategoryFiltersTouched(true);
+    } else {
+      setSubCategoryFilters(xor(subCategoryFilters, [subCategoryID]))
+    }
+  }
 
   return (
     <SidebarWrapper isSidebarOpen={isSidebarOpen}>
@@ -64,12 +102,15 @@ const Sidebar: React.FC<SidebarProps> = () => {
                   key={categoryID as string}
                   id={categoryID as string}
                   text={categoryTitle}
-                  onClick={() => {}}
+                  onClick={handleCategoryClick}
                   secondaryText={getShadowCountForCategory(
                     shadows,
                     categoryID
                   ).toString()}
-                  isActive
+                  isActive={
+                    !categoryFiltersTouched ||
+                    categoryFilters.includes(categoryID)
+                  }
                 />
               ))}
             </FilterBlock>
@@ -80,12 +121,15 @@ const Sidebar: React.FC<SidebarProps> = () => {
                   key={subCategoryID as string}
                   id={subCategoryID as string}
                   text={subCategoryTitle}
-                  onClick={() => {}}
+                  onClick={handleSubCategoryClick}
                   secondaryText={getShadowCountForSubCategory(
                     shadows,
                     subCategoryID
                   ).toString()}
-                  isActive
+                  isActive={
+                    !subCategoryFiltersTouched ||
+                    subCategoryFilters.includes(subCategoryID)
+                  }
                 />
               ))}
             </FilterBlock>
