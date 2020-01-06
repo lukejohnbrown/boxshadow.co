@@ -5,6 +5,7 @@ export const ShadowsContainerWrapper = styled.div`
   background: white;
   padding: ${theme.space[4]} ${theme.space[3]};
   border: 2px solid ${theme.palette.grey[400]};
+  min-height: 100vh;
 
   @media ${theme.breakpoints.up.sm} {
     padding: ${theme.space[4]};

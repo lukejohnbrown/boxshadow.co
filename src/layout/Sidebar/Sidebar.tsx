@@ -60,13 +60,14 @@ const Sidebar: React.FC<SidebarProps> = () => {
     setCategoryFilters,
     subCategoryFilters,
     setSubCategoryFilters,
+    categoryFiltersTouched,
+    setCategoryFiltersTouched,
+    subCategoryFiltersTouched,
+    setSubCategoryFiltersTouched
   } = useFilters();
   const categories = useShadowCategories();
   const subCategories = useShadowSubCategories();
   const shadows = useShadows();
-
-  const [categoryFiltersTouched, setCategoryFiltersTouched] = useState(false);
-  const [subCategoryFiltersTouched, setSubCategoryFiltersTouched] = useState(false);
 
   const handleCategoryClick = (categoryID: CategoriesJson["categoryID"]) => {
     if (!categoryFiltersTouched) {
