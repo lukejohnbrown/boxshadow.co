@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import xor from "lodash.xor";
+import { navigate } from "gatsby";
 import { FilterButton } from "../../components";
 import logo from "../../images/logo.svg";
 import SidebarButton from "./SidebarButton";
@@ -57,37 +58,49 @@ const Sidebar: React.FC<SidebarProps> = () => {
   const { isSidebarOpen } = useSidebar();
   const {
     categoryFilters,
-    setCategoryFilters,
     subCategoryFilters,
-    setSubCategoryFilters,
     categoryFiltersTouched,
-    setCategoryFiltersTouched,
     subCategoryFiltersTouched,
-    setSubCategoryFiltersTouched
   } = useFilters();
   const categories = useShadowCategories();
   const subCategories = useShadowSubCategories();
   const shadows = useShadows();
 
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedSubCategories, setSelectedSubCategories] = useState<string[]>([]);
+
   const handleCategoryClick = (categoryID: CategoriesJson["categoryID"]) => {
-    if (!categoryFiltersTouched) {
-      setCategoryFilters(xor(getAllCategoryIDs(categories), [categoryID]));
-      setCategoryFiltersTouched(true);
-    } else {
-      setCategoryFilters(xor(categoryFilters, [categoryID]))
+    const updatedCategoryFilters = !categoryFiltersTouched
+      ? xor(getAllCategoryIDs(categories), [categoryID])
+      : xor(categoryFilters, [categoryID]);
+
+    if (updatedCategoryFilters) {
+      setSelectedCategories(updatedCategoryFilters as string[]);
     }
   }
 
   const handleSubCategoryClick = (subCategoryID: SubCategoriesJson["subCategoryID"]) => {
-    if (!subCategoryFiltersTouched) {
-      setSubCategoryFilters(
-        xor(getAllSubCategoryIDs(subCategories), [subCategoryID])
-      );
-      setSubCategoryFiltersTouched(true);
-    } else {
-      setSubCategoryFilters(xor(subCategoryFilters, [subCategoryID]))
+     const updatedSubCategoryFilters = !subCategoryFiltersTouched
+       ? xor(getAllSubCategoryIDs(subCategories), [subCategoryID])
+       : xor(subCategoryFilters, [subCategoryID])
+
+    if (updatedSubCategoryFilters) {
+      setSelectedSubCategories(updatedSubCategoryFilters as string[])
     }
   }
+
+  useEffect(() => {
+    let queryString = ``;
+    if (selectedCategories.length) {
+      queryString = `${queryString}categories=${selectedCategories.join(",")}`;
+    }
+
+    if (selectedSubCategories.length) {
+      queryString = `${queryString}${selectedCategories.length ? "&" : "?"}subCategories=${selectedSubCategories.join(",")}`
+    }
+    console.log(queryString);
+    navigate(`/?${queryString}`);
+  }, [selectedCategories, selectedSubCategories]);
 
   return (
     <SidebarWrapper isSidebarOpen={isSidebarOpen}>
@@ -110,7 +123,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
                   ).toString()}
                   isActive={
                     !categoryFiltersTouched ||
-                    categoryFilters.includes(categoryID)
+                    categoryFilters.includes(categoryID as string)
                   }
                 />
               ))}
@@ -129,7 +142,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
                   ).toString()}
                   isActive={
                     !subCategoryFiltersTouched ||
-                    subCategoryFilters.includes(subCategoryID)
+                    subCategoryFilters.includes(subCategoryID as string)
                   }
                 />
               ))}

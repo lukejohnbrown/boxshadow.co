@@ -1,11 +1,12 @@
-import React, { useContext, useState, SetStateAction } from "react"
+import React, { useContext, useState, SetStateAction, useEffect } from "react"
 import { CategoriesJson, SubCategoriesJson } from "./types/graphql";
+import queryString from "query-string";
 
 type FiltersContext = {
-  categoryFilters: CategoriesJson["categoryID"][];
-  setCategoryFilters: React.Dispatch<SetStateAction<CategoriesJson["categoryID"][]>>;
-  subCategoryFilters: SubCategoriesJson["subCategoryID"][];
-  setSubCategoryFilters: React.Dispatch<SetStateAction<SubCategoriesJson["subCategoryID"][]>>;
+  categoryFilters: string[];
+  setCategoryFilters: React.Dispatch<SetStateAction<string[]>>;
+  subCategoryFilters: string[];
+  setSubCategoryFilters: React.Dispatch<SetStateAction<string[]>>;
   categoryFiltersTouched: boolean;
   setCategoryFiltersTouched: React.Dispatch<SetStateAction<boolean>>;
   subCategoryFiltersTouched: boolean;
@@ -18,10 +19,10 @@ export const FiltersContext = React.createContext<FiltersContext>(
 
 const FiltersProvider: React.FC = ({ children }) => {
   const [categoryFilters, setCategoryFilters] = useState<
-    CategoriesJson["categoryID"][]
+    string[]
   >([]);
   const [subCategoryFilters, setSubCategoryFilters] = useState<
-    SubCategoriesJson["subCategoryID"][]
+    string[]
   >([]);
   const [categoryFiltersTouched, setCategoryFiltersTouched] = useState(false);
   const [subCategoryFiltersTouched, setSubCategoryFiltersTouched] = useState(false);
