@@ -15,13 +15,10 @@ import {
 const Home: React.FC<PageRendererProps> = ({ location }) => {
   const { toggleSidebar } = useSidebar()
   const {
-    categoryFilters,
     setCategoryFilters,
     subCategoryFilters,
     setSubCategoryFilters,
-    categoryFiltersTouched,
     setCategoryFiltersTouched,
-    subCategoryFiltersTouched,
     setSubCategoryFiltersTouched,
   } = useFilters()
 
@@ -36,18 +33,22 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
         setCategoryFiltersTouched(true)
         setCategoryFilters(queryParams.categories.split(","))
       } else {
-        setCategoryFilters([])
+        setCategoryFilters([]);
       }
 
       if (queryParams.subCategories) {
         setSubCategoryFiltersTouched(true)
         setSubCategoryFilters(queryParams.subCategories.split(","))
       } else {
-        setSubCategoryFilters([])
+        setSubCategoryFilters([]);
       }
+    } else {
+       setCategoryFilters([]);
+       setSubCategoryFilters([]);
     }
   }, [location.search])
 
+  console.log(subCategoryFilters);
   return (
     <Layout>
       <HomeWrapper>

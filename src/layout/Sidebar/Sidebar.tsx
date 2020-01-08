@@ -96,9 +96,9 @@ const Sidebar: React.FC<SidebarProps> = () => {
     }
 
     if (selectedSubCategories.length) {
-      queryString = `${queryString}${selectedCategories.length ? "&" : "?"}subCategories=${selectedSubCategories.join(",")}`
+      queryString = `${queryString}${selectedCategories.length ? "&" : ""}subCategories=${selectedSubCategories.join(",")}`
     }
-    console.log(queryString);
+
     navigate(`/?${queryString}`);
   }, [selectedCategories, selectedSubCategories]);
 
