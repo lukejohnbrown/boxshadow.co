@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import xor from "lodash.xor";
 import { navigate } from "gatsby";
-import { FilterButton } from "../../components";
+import { FilterButton, ResetButton } from "../../components";
 import logo from "../../images/logo.svg";
 import SidebarButton from "./SidebarButton";
 import { useSidebar } from "../../SidebarProvider";
@@ -110,7 +110,15 @@ const Sidebar: React.FC<SidebarProps> = () => {
         {categories && shadows && (
           <Filters>
             <FilterBlock>
-              <FilterTitle>Box Shadow Style</FilterTitle>
+              <FilterTitle>
+                Box Shadow Style
+                <ResetButton
+                  buttonTitle="Reset Category Filters"
+                  onClick={() =>
+                    setSelectedCategories(getAllCategoryIDs(categories) as string[])
+                  }
+                />
+              </FilterTitle>
               {categories.map(({ categoryID, categoryTitle }) => (
                 <FilterButton
                   key={categoryID as string}
@@ -129,7 +137,15 @@ const Sidebar: React.FC<SidebarProps> = () => {
               ))}
             </FilterBlock>
             <FilterBlock>
-              <FilterTitle>Design Library</FilterTitle>
+              <FilterTitle>
+                Design Library
+                <ResetButton
+                  buttonTitle="Reset Design Library Filters"
+                  onClick={() =>
+                    setSelectedSubCategories(getAllSubCategoryIDs(subCategories) as string[])
+                  }
+                />
+              </FilterTitle>
               {subCategories.map(({ subCategoryID, subCategoryTitle }) => (
                 <FilterButton
                   key={subCategoryID as string}

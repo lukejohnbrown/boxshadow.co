@@ -59,7 +59,7 @@ export const ShadowItemWrapper = styled.div`
 `
 
 export const ShadowItemsWrapper = styled.div`
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
   @media(min-width: 600px) {
     margin-right: -${theme.space[6]};

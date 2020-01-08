@@ -16,11 +16,15 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
   const { toggleSidebar } = useSidebar()
   const {
     setCategoryFilters,
-    subCategoryFilters,
     setSubCategoryFilters,
+    categoryFiltersTouched,
+    subCategoryFiltersTouched,
     setCategoryFiltersTouched,
     setSubCategoryFiltersTouched,
   } = useFilters()
+
+  const resetCategories = () => setCategoryFilters([]);
+  const resetSubCategories = () => setSubCategoryFilters([]);
 
   useEffect(() => {
     if (location.search) {
@@ -30,25 +34,26 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
       } = queryString.parse(location.search)
 
       if (queryParams.categories) {
-        setCategoryFiltersTouched(true)
-        setCategoryFilters(queryParams.categories.split(","))
+        setCategoryFiltersTouched(true);
+        setCategoryFilters(queryParams.categories.split(","));
       } else {
-        setCategoryFilters([]);
+        resetCategories();
       }
 
       if (queryParams.subCategories) {
-        setSubCategoryFiltersTouched(true)
-        setSubCategoryFilters(queryParams.subCategories.split(","))
+        setSubCategoryFiltersTouched(true);
+        setSubCategoryFilters(queryParams.subCategories.split(","));
       } else {
-        setSubCategoryFilters([]);
+        resetSubCategories();
       }
-    } else {
-       setCategoryFilters([]);
-       setSubCategoryFilters([]);
+    }
+
+    if (!location.search) {
+       resetCategories();
+       resetSubCategories();
     }
   }, [location.search])
 
-  console.log(subCategoryFilters);
   return (
     <Layout>
       <HomeWrapper>

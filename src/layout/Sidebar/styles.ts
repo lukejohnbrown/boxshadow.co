@@ -38,7 +38,7 @@ export const Filters = styled.div`
 
 export const FilterBlock = styled.div`
   &:not(:last-child) {
-    margin-bottom: ${theme.space[5]};
+    margin-bottom: ${theme.space[6]};
   }
 
    button {
@@ -52,9 +52,16 @@ export const FilterTitle = styled.h4`
   text-transform: uppercase;
   color: ${theme.palette.grey[500]};
   font-weight: 600;
-  padding-left: ${theme.space[2]};
-  margin-bottom: ${theme.space[1]};
+  padding: 0 ${theme.space[2]};
+  margin-bottom: ${theme.space[2]};
   line-height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    transform: translateY(-1px);
+  }
 `;
 
 export const InnerWrapper = styled.div`

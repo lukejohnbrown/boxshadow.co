@@ -6,4 +6,5 @@ export { default as TitleBar } from "./TitleBar";
 export { default as ShadowItem } from "./ShadowItem";
 export { default as ShadowsContainer } from "./ShadowsContainer";
 export { default as Button } from "./Button";
+export { default as ResetButton } from "./ResetButton";
 
