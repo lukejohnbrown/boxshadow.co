@@ -17,6 +17,7 @@
     "gatsby-plugin-typescript": "^2.1.23",
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-json": "^2.2.22",
+    "hex-to-rgba": "^2.0.1",
     "lodash.xor": "^4.5.0",
     "query-string": "^6.9.0",
     "react": "^16.12.0",

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Helmet from "react-helmet"
 import { PageRendererProps } from "gatsby";
 import queryString from "query-string";
 import Layout from "../../layout"
@@ -13,12 +14,10 @@ import {
 } from "./styles"
 
 const Home: React.FC<PageRendererProps> = ({ location }) => {
-  const { toggleSidebar } = useSidebar()
+  const { toggleSidebar } = useSidebar();
   const {
     setCategoryFilters,
     setSubCategoryFilters,
-    categoryFiltersTouched,
-    subCategoryFiltersTouched,
     setCategoryFiltersTouched,
     setSubCategoryFiltersTouched,
   } = useFilters()
@@ -56,6 +55,13 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
 
   return (
     <Layout>
+      <Helmet
+        title="Shadow Gallery | boxshadows.co"
+        meta={[
+          { name: "description", content: "Collection of CSS box shadows for your next project" },
+          { name: "keywords", content: "css, box-shadow, collection, project, design" },
+        ]}
+      />
       <HomeWrapper>
         <AboutBlockWrapper>
           <AboutBlock />

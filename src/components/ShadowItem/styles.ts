@@ -1,8 +1,34 @@
 import styled from "styled-components";
+import hexToRgba from "hex-to-rgba";
 import theme from "../../theme";
+import { ShadowsJson } from "../../types/graphql"
 
-export const ShadowItemWrapper = styled.div`
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+type ShadowStyles = {
+  color: string,
+  alpha: string,
+  blur: string,
+  spread: string,
+  xValue: string,
+  yValue: string,
+}
+
+// TODO move this to utils
+const constructBoxShadowStyle = ({
+  color,
+  alpha,
+  blur,
+  spread,
+  xValue,
+  yValue,
+}: ShadowStyles) => {
+  const rgbaColor = hexToRgba(color, alpha);
+  return `${xValue} ${yValue} ${blur} ${spread} ${rgbaColor}`;
+}
+
+export const ShadowItemWrapper = styled.div<{
+  shadowStyles: ShadowStyles
+}>`
+  box-shadow: ${({ shadowStyles }) => constructBoxShadowStyle(shadowStyles)};
   background: ${theme.palette.grey[100]};
   border-radius: 8px;
   padding: ${theme.space[4]};
@@ -10,7 +36,7 @@ export const ShadowItemWrapper = styled.div`
     width: 100%;
     margin-top: ${theme.space[3]};
   }
-`;
+`
 
 export const Title = styled.h3`
   font-size: ${theme.fontSize[1]};

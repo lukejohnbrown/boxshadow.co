@@ -15,6 +15,7 @@ const ShadowItem: React.FC<ShadowsJson> = ({
   color,
   alpha,
   blur,
+  spread,
   xValue,
   yValue,
 }) => {
@@ -22,9 +23,13 @@ const ShadowItem: React.FC<ShadowsJson> = ({
   const shadowSubCategory = getSubCategoryByID(subCategories, shadowSubCategoryID);
 
   return (
-    <ShadowItemWrapper>
+    <ShadowItemWrapper
+      shadowStyles={{ color, alpha, blur, spread, xValue, yValue }}
+    >
       <Title>{shadowTitle}</Title>
-      <Subtitle>{shadowSubCategory ? shadowSubCategory.subCategoryTitle : ""}</Subtitle>
+      <Subtitle>
+        {shadowSubCategory ? shadowSubCategory.subCategoryTitle : ""}
+      </Subtitle>
       <ShadowStats
         shadowStats={[
           {
@@ -40,11 +45,11 @@ const ShadowItem: React.FC<ShadowsJson> = ({
             statDetail: blur,
           },
           {
-            statTitle: "X Value",
+            statTitle: "Offset-X",
             statDetail: xValue,
           },
           {
-            statTitle: "Y Value",
+            statTitle: "Offset-Y",
             statDetail: yValue,
           },
         ]}

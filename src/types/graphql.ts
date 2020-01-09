@@ -789,6 +789,7 @@ export type FileFieldsEnum =
   'childrenShadowsJson___color' |
   'childrenShadowsJson___alpha' |
   'childrenShadowsJson___blur' |
+  'childrenShadowsJson___spread' |
   'childrenShadowsJson___xValue' |
   'childrenShadowsJson___yValue' |
   'childrenCategoriesJson' |
@@ -1138,6 +1139,7 @@ export type QueryShadowsJsonArgs = {
   color?: Maybe<StringQueryOperatorInput>,
   alpha?: Maybe<StringQueryOperatorInput>,
   blur?: Maybe<StringQueryOperatorInput>,
+  spread?: Maybe<StringQueryOperatorInput>,
   xValue?: Maybe<StringQueryOperatorInput>,
   yValue?: Maybe<StringQueryOperatorInput>
 };
@@ -1268,6 +1270,7 @@ export type ShadowsJson = Node & {
   color?: Maybe<Scalars['String']>,
   alpha?: Maybe<Scalars['String']>,
   blur?: Maybe<Scalars['String']>,
+  spread?: Maybe<Scalars['String']>,
   xValue?: Maybe<Scalars['String']>,
   yValue?: Maybe<Scalars['String']>,
 };
@@ -1392,6 +1395,7 @@ export type ShadowsJsonFieldsEnum =
   'color' |
   'alpha' |
   'blur' |
+  'spread' |
   'xValue' |
   'yValue';
 
@@ -1406,6 +1410,7 @@ export type ShadowsJsonFilterInput = {
   color?: Maybe<StringQueryOperatorInput>,
   alpha?: Maybe<StringQueryOperatorInput>,
   blur?: Maybe<StringQueryOperatorInput>,
+  spread?: Maybe<StringQueryOperatorInput>,
   xValue?: Maybe<StringQueryOperatorInput>,
   yValue?: Maybe<StringQueryOperatorInput>,
 };
@@ -2284,7 +2289,7 @@ export type ShadowCategoriesQuery = { allCategoriesJson: { nodes: Array<Pick<Cat
 export type ShadowsQueryVariables = {};
 
 
-export type ShadowsQuery = { allShadowsJson: { nodes: Array<Pick<ShadowsJson, 'id' | 'shadowTitle' | 'shadowCategoryID' | 'shadowSubCategoryID' | 'color' | 'alpha' | 'blur' | 'xValue' | 'yValue'>> } };
+export type ShadowsQuery = { allShadowsJson: { nodes: Array<Pick<ShadowsJson, 'id' | 'shadowTitle' | 'shadowCategoryID' | 'shadowSubCategoryID' | 'color' | 'alpha' | 'blur' | 'spread' | 'xValue' | 'yValue'>> } };
 
 export type ShadowSubCategoriesQueryVariables = {};
 

@@ -14,6 +14,7 @@ export const useShadows = (): ShadowsJson[] => {
             color
             alpha
             blur
+            spread
             xValue
             yValue
           }
