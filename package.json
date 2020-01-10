@@ -21,6 +21,7 @@
     "lodash.xor": "^4.5.0",
     "query-string": "^6.9.0",
     "react": "^16.12.0",
+    "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.4.1",
