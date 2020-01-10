@@ -1,15 +1,16 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
+import ScrollContainer from "react-indiana-drag-scroll"
 import {
   ShadowsContainerWrapper,
   ShadowsContainerTitle,
   ShadowItemWrapper,
-  ShadowItemsWrapper
+  ShadowItemsWrapper,
+  ScrollWrapper,
 } from "./styles"
 import { ShadowItem } from "../";
 import {
   useShadowCategories,
   useShadows,
-  useShadowSubCategories,
 } from "../../hooks";
 import { useFilters } from "../../FiltersProvider";
 import { CategoriesJson, ShadowsJson, SubCategoriesJson } from "../../types/graphql";
@@ -78,26 +79,32 @@ const ShadowsContainer = () => {
 
   return (
     <ShadowsContainerWrapper>
-      {!shadowsByCategory.some(({ shadows }) => shadows.length) && (
-        <ShadowsContainerTitle>No shadows found for selected filters 🤦‍♂️</ShadowsContainerTitle>
-      )}
-      {shadowsByCategory.map(({ categoryTitle, categoryID, shadows }) => (
-        <Fragment key={categoryID as string}>
-          {shadows.length !== 0 && (
-            <>
-              <ShadowsContainerTitle>{categoryTitle}</ShadowsContainerTitle>
+      <ScrollWrapper>
+        {!shadowsByCategory.some(({ shadows }) => shadows.length) && (
+          <ShadowsContainerTitle>
+            No shadows found for selected filters 🤦‍♂️
+          </ShadowsContainerTitle>
+        )}
 
-              <ShadowItemsWrapper>
-                {shadows.map(shadow => (
-                  <ShadowItemWrapper key={shadow.id}>
-                    <ShadowItem {...shadow} />
-                  </ShadowItemWrapper>
-                ))}
-              </ShadowItemsWrapper>
-            </>
-          )}
-        </Fragment>
-      ))}
+        {shadowsByCategory.map(({ categoryTitle, categoryID, shadows }) => (
+          <Fragment key={categoryID as string}>
+            {shadows.length !== 0 && (
+              <>
+                <ShadowsContainerTitle>{categoryTitle}</ShadowsContainerTitle>
+                <ScrollContainer className="scroll-container">
+                  <ShadowItemsWrapper shadowCount={shadows.length}>
+                    {shadows.map(shadow => (
+                      <ShadowItemWrapper key={shadow.id}>
+                        <ShadowItem {...shadow} />
+                      </ShadowItemWrapper>
+                    ))}
+                  </ShadowItemsWrapper>
+                </ScrollContainer>
+              </>
+            )}
+          </Fragment>
+        ))}
+      </ScrollWrapper>
     </ShadowsContainerWrapper>
   )
 }

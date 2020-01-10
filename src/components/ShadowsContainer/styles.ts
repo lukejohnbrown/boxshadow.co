@@ -1,67 +1,64 @@
 import styled from "styled-components";
 import theme from "../../theme";
 
+const SHADOW_MARGIN = 50;
+const SHADOW_ITEM_WIDTH = 270;
+
 export const ShadowsContainerWrapper = styled.div`
   background: white;
-  padding: ${theme.space[4]} ${theme.space[3]};
   border: 2px solid ${theme.palette.grey[400]};
   min-height: 100vh;
 
-  @media ${theme.breakpoints.up.sm} {
-    padding: ${theme.space[4]};
-  }
-
   @media ${theme.breakpoints.up.md} {
-    padding: ${theme.space[5]} ${theme.space[5]};
     margin-left: ${theme.space[6]};
     border-top-left-radius: 30px;
-  }
-
-  @media ${theme.breakpoints.up.lg} {
-    padding-left: ${theme.space[6]};
   }
 `;
 
 export const ShadowsContainerTitle = styled.h3`
-  margin-bottom: ${theme.space[3]};
   font-size: ${theme.fontSize[1]};
   font-weight: 500;
+  margin: 0 ${SHADOW_MARGIN}px ${theme.space[3]} 15px;
+
+  @media (min-width: 600px) {
+    margin-left: ${SHADOW_MARGIN}px;
+  }
 
   @media ${theme.breakpoints.up.lg} {
    font-size: ${theme.fontSize[2]};
   }
 `;
 
-export const ShadowItemWrapper = styled.div`
-  flex: 0 0 100%;
-  margin: 0 0 ${theme.space[6]} 0;
-
-  @media(min-width: 600px) {
-    flex: 0 0 calc(50% - ${theme.space[6]});
-    margin: 0 ${theme.space[6]} ${theme.space[6]} 0;
+export const ScrollWrapper = styled.div`
+  overflow: scroll;
+  padding: ${theme.space[4]} 0;
+  &::-webkit-scrollbar {
+    display:none;
   }
 
-  @media ${theme.breakpoints.up.sm} {
-    flex: 0 0 calc(33.3333% - ${theme.space[6]});
+  @media ${theme.breakpoints.up.md} {
+    padding: ${theme.space[5]} 0;
   }
+`;
 
-  @media ${theme.breakpoints.up.xl} {
-    flex: 0 0 calc(25% - ${theme.space[6]});
-  }
-
-  @media ${theme.breakpoints.up.xxl} {
-    flex: 0 0 calc(20% - ${theme.space[6]});
-  }
-
-  @media(min-width: 2000px) {
-    flex: 0 0 calc(15% - ${theme.space[6]});
-  }
-`
-
-export const ShadowItemsWrapper = styled.div`
+export const ShadowItemsWrapper = styled.div<{
+  shadowCount: number
+}>`
   display: flex;
-  flex-wrap: wrap;
-  @media(min-width: 600px) {
-    margin-right: -${theme.space[6]};
+  flex-wrap: no-wrap;
+  margin-bottom: ${theme.space[6]};
+  width: ${({ shadowCount }) => SHADOW_MARGIN + (shadowCount * (SHADOW_ITEM_WIDTH + SHADOW_MARGIN))}px;
+`
+
+export const ShadowItemWrapper = styled.div`
+  flex: 0 0 ${SHADOW_ITEM_WIDTH}px;
+  margin: 0 ${SHADOW_MARGIN}px 0 0;
+   &:first-child {
+    margin: 0 ${SHADOW_MARGIN}px 0 15px;
+
+    @media (min-width: 600px) {
+      margin-left: ${SHADOW_MARGIN}px;
+    }
   }
 `
+

@@ -6,14 +6,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-plugin-graphql-codegen`,
-      options: {
-        fileName: `src/types/graphql.ts`,
-        codegen: true,
-        codegenDelay: 250,
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-graphql-codegen`,
+    //   options: {
+    //     fileName: `src/types/graphql.ts`,
+    //     codegen: true,
+    //     codegenDelay: 250,
+    //   }
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

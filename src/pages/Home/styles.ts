@@ -38,8 +38,9 @@ export const FilterButton = styled.button`
 export const HomeWrapper = styled.div`
   background: ${theme.palette.grey[100]};
   min-height: 100vh;
+
   @media ${theme.breakpoints.up.lg} {
-    padding-left: 300px;
+    margin-left: 300px;
   }
 `
 
