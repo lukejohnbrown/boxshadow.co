@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { ShadowItemWrapper, Title, Subtitle, StatsWrapper } from "./styles";
-import ShadowStats from "./ShadowStats";
+
 import { Button } from "..";
+import StatsCoursel from "./StatsCarousel";
+import { ShadowItemWrapper, Title, Subtitle, StatsCarouselWrapper } from "./styles"
 import { useShadowSubCategories } from "../../hooks";
-import { ShadowsJson, SubCategoriesJson } from "../../types/graphql";
+import {
+  ShadowsJson,
+  SubCategoriesJson,
+  ShadowsJsonLayers,
+} from "../../types/graphql"
 import { constructBoxShadowStyle } from "../../utils";
 
 // TODO move this to util function
@@ -14,24 +19,12 @@ const getSubCategoryByID = (subCategories: SubCategoriesJson[], shadowSubCategor
 const ShadowItem: React.FC<ShadowsJson> = ({
   shadowTitle,
   shadowSubCategoryID,
-  color,
-  alpha,
-  blur,
-  spread,
-  xValue,
-  yValue,
+  layers
 }) => {
   const [copied, setCopied] = useState(false);
   const subCategories = useShadowSubCategories();
   const shadowSubCategory = getSubCategoryByID(subCategories, shadowSubCategoryID);
-  const boxShadowStyle = constructBoxShadowStyle({
-    color,
-    alpha,
-    blur,
-    spread,
-    xValue,
-    yValue,
-  });
+  const boxShadowStyle = constructBoxShadowStyle(layers as ShadowsJsonLayers[])
 
   useEffect(() => {
     if (copied) {
@@ -47,31 +40,15 @@ const ShadowItem: React.FC<ShadowsJson> = ({
       <Subtitle>
         {shadowSubCategory ? shadowSubCategory.subCategoryTitle : ""}
       </Subtitle>
-      <ShadowStats
-        shadowStats={[
-          {
-            statTitle: "Color",
-            statDetail: color,
-          },
-          {
-            statTitle: "Alpha",
-            statDetail: alpha,
-          },
-          {
-            statTitle: "Blur",
-            statDetail: blur,
-          },
-          {
-            statTitle: "Offset-X",
-            statDetail: xValue,
-          },
-          {
-            statTitle: "Offset-Y",
-            statDetail: yValue,
-          },
-        ]}
-      />
-      <CopyToClipboard text={`box-shadow: ${boxShadowStyle};`} onCopy={() => setCopied(true)}>
+
+      <StatsCarouselWrapper>
+        <StatsCoursel shadowLayers={layers} />
+      </StatsCarouselWrapper>
+
+      <CopyToClipboard
+        text={`box-shadow: ${boxShadowStyle};`}
+        onCopy={() => setCopied(true)}
+      >
         <Button className="shadowitem__button" onClick={() => {}}>
           {copied ? "CSS Copied 🥳" : "Copy CSS"}
         </Button>

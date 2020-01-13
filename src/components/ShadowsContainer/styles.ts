@@ -46,7 +46,7 @@ export const ShadowItemsWrapper = styled.div<{
 }>`
   display: flex;
   flex-wrap: no-wrap;
-  margin-bottom: ${theme.space[6]};
+  margin: ${theme.space[1]} 0 ${theme.space[6]} 0;
   width: ${({ shadowCount }) => SHADOW_MARGIN + (shadowCount * (SHADOW_ITEM_WIDTH + SHADOW_MARGIN))}px;
 `
 

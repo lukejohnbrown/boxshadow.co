@@ -6,7 +6,7 @@ export type Scalars = {
   Boolean: boolean,
   Int: number,
   Float: number,
-  /** 
+  /**
  * A date string, such as 2007-12-03, compliant with the ISO 8601 standard for
    * representation of dates and times using the Gregorian calendar.
  */
@@ -68,7 +68,7 @@ export type CategoriesJsonEdge = {
   previous?: Maybe<CategoriesJson>,
 };
 
-export type CategoriesJsonFieldsEnum = 
+export type CategoriesJsonFieldsEnum =
   'id' |
   'parent___id' |
   'parent___parent___id' |
@@ -320,7 +320,7 @@ export type DirectoryEdge = {
   previous?: Maybe<Directory>,
 };
 
-export type DirectoryFieldsEnum = 
+export type DirectoryFieldsEnum =
   'sourceInstanceName' |
   'absolutePath' |
   'relativePath' |
@@ -623,7 +623,7 @@ export type FileEdge = {
   previous?: Maybe<File>,
 };
 
-export type FileFieldsEnum = 
+export type FileFieldsEnum =
   'sourceInstanceName' |
   'absolutePath' |
   'relativePath' |
@@ -786,6 +786,13 @@ export type FileFieldsEnum =
   'childrenShadowsJson___shadowTitle' |
   'childrenShadowsJson___shadowCategoryID' |
   'childrenShadowsJson___shadowSubCategoryID' |
+  'childrenShadowsJson___layers' |
+  'childrenShadowsJson___layers___color' |
+  'childrenShadowsJson___layers___alpha' |
+  'childrenShadowsJson___layers___blur' |
+  'childrenShadowsJson___layers___spread' |
+  'childrenShadowsJson___layers___xValue' |
+  'childrenShadowsJson___layers___yValue' |
   'childrenShadowsJson___color' |
   'childrenShadowsJson___alpha' |
   'childrenShadowsJson___blur' |
@@ -1136,6 +1143,7 @@ export type QueryShadowsJsonArgs = {
   shadowTitle?: Maybe<StringQueryOperatorInput>,
   shadowCategoryID?: Maybe<StringQueryOperatorInput>,
   shadowSubCategoryID?: Maybe<StringQueryOperatorInput>,
+  layers?: Maybe<ShadowsJsonLayersFilterListInput>,
   color?: Maybe<StringQueryOperatorInput>,
   alpha?: Maybe<StringQueryOperatorInput>,
   blur?: Maybe<StringQueryOperatorInput>,
@@ -1267,12 +1275,7 @@ export type ShadowsJson = Node & {
   shadowTitle?: Maybe<Scalars['String']>,
   shadowCategoryID?: Maybe<Scalars['String']>,
   shadowSubCategoryID?: Maybe<Scalars['String']>,
-  color?: Maybe<Scalars['String']>,
-  alpha?: Maybe<Scalars['String']>,
-  blur?: Maybe<Scalars['String']>,
-  spread?: Maybe<Scalars['String']>,
-  xValue?: Maybe<Scalars['String']>,
-  yValue?: Maybe<Scalars['String']>,
+  layers?: Array<ShadowsJsonLayers>
 };
 
 export type ShadowsJsonConnection = {
@@ -1302,7 +1305,7 @@ export type ShadowsJsonEdge = {
   previous?: Maybe<ShadowsJson>,
 };
 
-export type ShadowsJsonFieldsEnum = 
+export type ShadowsJsonFieldsEnum =
   'id' |
   'parent___id' |
   'parent___parent___id' |
@@ -1392,6 +1395,13 @@ export type ShadowsJsonFieldsEnum =
   'shadowTitle' |
   'shadowCategoryID' |
   'shadowSubCategoryID' |
+  'layers' |
+  'layers___color' |
+  'layers___alpha' |
+  'layers___blur' |
+  'layers___spread' |
+  'layers___xValue' |
+  'layers___yValue' |
   'color' |
   'alpha' |
   'blur' |
@@ -1407,6 +1417,7 @@ export type ShadowsJsonFilterInput = {
   shadowTitle?: Maybe<StringQueryOperatorInput>,
   shadowCategoryID?: Maybe<StringQueryOperatorInput>,
   shadowSubCategoryID?: Maybe<StringQueryOperatorInput>,
+  layers?: Maybe<ShadowsJsonLayersFilterListInput>,
   color?: Maybe<StringQueryOperatorInput>,
   alpha?: Maybe<StringQueryOperatorInput>,
   blur?: Maybe<StringQueryOperatorInput>,
@@ -1426,6 +1437,28 @@ export type ShadowsJsonGroupConnection = {
   pageInfo: PageInfo,
   field: Scalars['String'],
   fieldValue?: Maybe<Scalars['String']>,
+};
+
+export type ShadowsJsonLayers = {
+  color?: Maybe<Scalars['String']>,
+  alpha?: Maybe<Scalars['String']>,
+  blur?: Maybe<Scalars['String']>,
+  spread?: Maybe<Scalars['String']>,
+  xValue?: Maybe<Scalars['String']>,
+  yValue?: Maybe<Scalars['String']>,
+};
+
+export type ShadowsJsonLayersFilterInput = {
+  color?: Maybe<StringQueryOperatorInput>,
+  alpha?: Maybe<StringQueryOperatorInput>,
+  blur?: Maybe<StringQueryOperatorInput>,
+  spread?: Maybe<StringQueryOperatorInput>,
+  xValue?: Maybe<StringQueryOperatorInput>,
+  yValue?: Maybe<StringQueryOperatorInput>,
+};
+
+export type ShadowsJsonLayersFilterListInput = {
+  elemMatch?: Maybe<ShadowsJsonLayersFilterInput>,
 };
 
 export type ShadowsJsonSortInput = {
@@ -1481,7 +1514,7 @@ export type SiteEdge = {
   previous?: Maybe<Site>,
 };
 
-export type SiteFieldsEnum = 
+export type SiteFieldsEnum =
   'id' |
   'parent___id' |
   'parent___parent___id' |
@@ -1639,7 +1672,7 @@ export type SitePageEdge = {
   previous?: Maybe<SitePage>,
 };
 
-export type SitePageFieldsEnum = 
+export type SitePageFieldsEnum =
   'id' |
   'parent___id' |
   'parent___parent___id' |
@@ -1872,7 +1905,7 @@ export type SitePluginEdge = {
   previous?: Maybe<SitePlugin>,
 };
 
-export type SitePluginFieldsEnum = 
+export type SitePluginFieldsEnum =
   'id' |
   'parent___id' |
   'parent___parent___id' |
@@ -2115,7 +2148,7 @@ export type SiteSortInput = {
   order?: Maybe<Array<Maybe<SortOrderEnum>>>,
 };
 
-export type SortOrderEnum = 
+export type SortOrderEnum =
   'ASC' |
   'DESC';
 
@@ -2164,7 +2197,7 @@ export type SubCategoriesJsonEdge = {
   previous?: Maybe<SubCategoriesJson>,
 };
 
-export type SubCategoriesJsonFieldsEnum = 
+export type SubCategoriesJsonFieldsEnum =
   'id' |
   'parent___id' |
   'parent___parent___id' |

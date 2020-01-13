@@ -11,12 +11,14 @@ export const useShadows = (): ShadowsJson[] => {
             shadowTitle
             shadowCategoryID
             shadowSubCategoryID
-            color
-            alpha
-            blur
-            spread
-            xValue
-            yValue
+            layers {
+              color
+              alpha
+              blur
+              spread
+              xValue
+              yValue
+            }
           }
         }
       }

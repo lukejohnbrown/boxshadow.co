@@ -1,19 +1,28 @@
 import hexToRgba from "hex-to-rgba"
-import { ShadowsJson } from "../types/graphql";
+import { ShadowsJsonLayers } from "../types/graphql";
 
-export type ShadowStyles = Partial<ShadowsJson>;
+export type ShadowStyles = Partial<ShadowsJsonLayers>;
 
-export const constructBoxShadowStyle = ({
-  color,
-  alpha,
-  blur,
-  spread,
-  xValue,
-  yValue,
-}: ShadowStyles): string | undefined => {
-  if (!color || !alpha) return;
+export const constructBoxShadowStyle = (layers: ShadowStyles[]): string | undefined => {
+  let boxShadowCSS = ``;
+  layers.forEach(({
+    color,
+    alpha,
+    blur,
+    spread,
+    xValue,
+    yValue,
+  }) => {
+    if (!color || !alpha) return
+    const rgbaColor = hexToRgba(color, alpha);
+    const currentBoxShadow = `${xValue} ${yValue} ${blur} ${spread} ${rgbaColor}`;
+    if (!boxShadowCSS) {
+      boxShadowCSS = currentBoxShadow
+    } else {
+      boxShadowCSS = `${boxShadowCSS}, ${currentBoxShadow}`
+    }
+  })
 
-  const rgbaColor = hexToRgba(color, alpha)
-  return `${xValue} ${yValue} ${blur} ${spread} ${rgbaColor}`
+  return boxShadowCSS;
 }
 
