@@ -1,1780 +1,306 @@
 [
   {
+    "shadowTitle": "Bootstrap 001",
+    "shadowCategoryID": "0",
+    "shadowSubCategoryID": "2",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "2px",
+      "blur": "4px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.075"
+    }]
+  },
+  {
     "shadowTitle": "Material 001",
     "shadowCategoryID": "0",
     "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "2px",
+      "blur": "1px",
+      "spread": "-1px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "1px",
+      "blur": "1px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "1px",
+      "blur": "3px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
   }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "3",
-    "layers": [
-      {
-        "color": "#333",
-        "alpha": "1",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "25px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
+    "shadowTitle": "Material 002",
     "shadowCategoryID": "0",
     "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "3px",
+      "blur": "1px",
+      "spread": "-2px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "2px",
+      "blur": "2px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "1px",
+      "blur": "5px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
   }, {
-    "shadowTitle": "Test Shadow 001",
+    "shadowTitle": "Material 003",
     "shadowCategoryID": "0",
     "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "3px",
+      "blur": "3px",
+      "spread": "-2px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "3px",
+      "blur": "4px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "1px",
+      "blur": "8px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
   },
   {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "3",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "3",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "3",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "3",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "3",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
+    "shadowTitle": "Bootstrap 002",
+    "shadowCategoryID": "1",
+    "shadowSubCategoryID": "2",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "8px",
+      "blur": "16px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.15"
+    }]
   },
   {
-    "shadowTitle": "Test Shadow 001",
+    "shadowTitle": "Material 004",
     "shadowCategoryID": "1",
     "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "2px",
+      "blur": "4px",
+      "spread": "-1px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "4px",
+      "blur": "5px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "1px",
+      "blur": "10px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
   },
   {
-    "shadowTitle": "Test Shadow 001",
+    "shadowTitle": "Material 005",
     "shadowCategoryID": "1",
-    "shadowSubCategoryID": "1",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "5px",
+      "blur": "5px",
+      "spread": "-3px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "8px",
+      "blur": "10px",
+      "spread": "1px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "3px",
+      "blur": "14px",
+      "spread": "2px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
   }, {
-    "shadowTitle": "Test Shadow 001",
+    "shadowTitle": "Material 006",
     "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "6px",
+      "blur": "6px",
+      "spread": "-3px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "10px",
+      "blur": "14px",
+      "spread": "1px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "4px",
+      "blur": "18px",
+      "spread": "3px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
+  },
+  {
+    "shadowTitle": "Material 007",
     "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "8px",
+      "blur": "9px",
+      "spread": "-5px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "15px",
+      "blur": "22px",
+      "spread": "2px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "6px",
+      "blur": "28px",
+      "spread": "5px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
   }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
+   "shadowTitle": "Material 008",
+   "shadowCategoryID": "1",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "9px",
+      "blur": "11px",
+      "spread": "-5px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "18px",
+      "blur": "28px",
+      "spread": "2px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "7px",
+      "blur": "34px",
+      "spread": "6px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
+  },
+  {
+    "shadowTitle": "Bootstrap 003",
     "shadowCategoryID": "2",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "16px",
+      "blur": "48px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.175"
+    }]
+  },
+  {
+    "shadowTitle": "Material 009",
     "shadowCategoryID": "2",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "10px",
+      "blur": "13px",
+      "spread": "-6px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "21px",
+      "blur": "33px",
+      "spread": "3px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "8px",
+      "blur": "40px",
+      "spread": "7px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
   }, {
-    "shadowTitle": "Test Shadow 001",
+    "shadowTitle": "Material 010",
     "shadowCategoryID": "2",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "2",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "2",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "2",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "2",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "2",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
-  }, {
-    "shadowTitle": "Test Shadow 001",
-    "shadowCategoryID": "2",
-    "shadowSubCategoryID": "2",
-    "layers": [
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      },
-      {
-        "color": "#000000",
-        "alpha": "0.25",
-        "blur": "5px",
-        "spread": "2px",
-        "xValue": "3px",
-        "yValue": "3px"
-      }
-    ]
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "11px",
+      "blur": "15px",
+      "spread": "-7px",
+      "color": "#000000",
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "24px",
+      "blur": "38px",
+      "spread": "3px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "9px",
+      "blur": "46px",
+      "spread": "8px",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
   }
 ]
