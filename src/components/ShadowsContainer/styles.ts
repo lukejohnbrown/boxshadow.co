@@ -6,13 +6,8 @@ const SHADOW_ITEM_WIDTH = 270;
 
 export const ShadowsContainerWrapper = styled.div`
   background: white;
-  border: 2px solid ${theme.palette.grey[400]};
+  border-top: 2px solid ${theme.palette.grey[400]};
   min-height: 100vh;
-
-  @media ${theme.breakpoints.up.md} {
-    margin-left: ${theme.space[6]};
-    border-top-left-radius: 30px;
-  }
 `;
 
 export const ShadowsContainerTitle = styled.h3`
