@@ -7,8 +7,9 @@ import SidebarButton from "./SidebarButton";
 import { useSidebar } from "../../SidebarProvider";
 import { useFilters } from "../../FiltersProvider";
 import { AboutBlock } from "../../components";
+import { getShadowCountForCategory, getShadowCountForSubCategory, getAllCategoryIDs, getAllSubCategoryIDs } from "../../utils";
 import { useShadowCategories, useShadows, useShadowSubCategories } from "../../hooks";
-import { ShadowsJson, CategoriesJson, SubCategoriesJson } from "../../types/graphql";
+import { CategoriesJson, SubCategoriesJson } from "../../types/graphql";
 import {
   FilterBlock,
   Filters,
@@ -32,27 +33,6 @@ export type SidebarProps = {
   onFilterClick?: (id: string) => void;
 }
 
-// TODO move this to util function
-const getShadowCountForCategory = (shadows: ShadowsJson[], categoryID: ShadowsJson["shadowCategoryID"]) =>
-  shadows.filter(({ shadowCategoryID }) => shadowCategoryID === categoryID)
-    .length
-
-// TODO move this to util function
-const getShadowCountForSubCategory = (
-  shadows: ShadowsJson[],
-  subCategoryID: ShadowsJson["shadowSubCategoryID"]
-) =>
-  shadows.filter(
-    ({ shadowSubCategoryID }) => shadowSubCategoryID === subCategoryID
-  ).length;
-
-// TODO move this to util function
-const getAllCategoryIDs = (allCategories: CategoriesJson[]) =>
-  allCategories.map(({ categoryID }) => categoryID);
-
-// TODO move this to util function
-const getAllSubCategoryIDs = (allSubCategories: SubCategoriesJson[]) =>
-  allSubCategories.map(({ subCategoryID }) => subCategoryID);
 
 const Sidebar: React.FC<SidebarProps> = () => {
   const { isSidebarOpen } = useSidebar();

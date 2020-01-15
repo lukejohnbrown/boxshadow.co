@@ -10,11 +10,7 @@ import {
   SubCategoriesJson,
   ShadowsJsonLayers,
 } from "../../types/graphql"
-import { constructBoxShadowStyle } from "../../utils";
-
-// TODO move this to util function
-const getSubCategoryByID = (subCategories: SubCategoriesJson[], shadowSubCategoryID: ShadowsJson["shadowSubCategoryID"]) =>
-  subCategories.find(({ subCategoryID }) => shadowSubCategoryID === subCategoryID);
+import { constructBoxShadowStyle, getSubCategoryByID } from "../../utils"
 
 const ShadowItem: React.FC<ShadowsJson> = ({
   shadowTitle,

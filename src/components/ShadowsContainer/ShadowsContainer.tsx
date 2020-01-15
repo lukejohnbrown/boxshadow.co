@@ -12,47 +12,8 @@ import {
   useShadowCategories,
   useShadows,
 } from "../../hooks";
+import { filterShadowsByCategoryAndSubCategory, constructShadowsByCategory } from "../../utils";
 import { useFilters } from "../../FiltersProvider";
-import { CategoriesJson, ShadowsJson, SubCategoriesJson } from "../../types/graphql";
-
-type ShadowCategoryGroup = {
-  categoryTitle: CategoriesJson["categoryTitle"];
-  categoryID: CategoriesJson["categoryID"];
-  shadows: ShadowsJson[]
-}
-
-//TODO Move this to a util function
-const constructShadowsByCategory = (
-  shadows: ShadowsJson[],
-  categories: CategoriesJson[]
-): ShadowCategoryGroup[] => {
-  return categories.map(({ categoryTitle, categoryID }) => ({
-    categoryTitle: categoryTitle,
-    categoryID: categoryID,
-    shadows: shadows.filter(
-      ({ shadowCategoryID }) => shadowCategoryID === categoryID
-    ),
-  }));
-}
-
-//TODO Move this to a util function
-const filterShadowsByCategoryAndSubCategory = (
-  shadows: ShadowsJson[],
-  categoryFilters: CategoriesJson["categoryID"][],
-  subCategoryFilters: SubCategoriesJson["subCategoryID"][],
-  categoryFiltersTouched: boolean,
-  subCategoryFiltersTouched: boolean
-) => {
-  return shadows
-    .filter(({ shadowCategoryID }) => {
-      if (!categoryFiltersTouched) return true;
-      return categoryFilters.includes(shadowCategoryID);
-    })
-    .filter(({ shadowSubCategoryID }) => {
-      if (!subCategoryFiltersTouched) return true;
-      return subCategoryFilters.includes(shadowSubCategoryID);
-    })
-}
 
 const ShadowsContainer = () => {
   const shadows = useShadows();
