@@ -9,6 +9,10 @@
   },
   {
     "categoryID": "2",
-    "categoryTitle": "Hard Shadows"
+    "categoryTitle": "Heavy Shadows"
+  },
+  {
+    "categoryID": "3",
+    "categoryTitle": "Test"
   }
 ]

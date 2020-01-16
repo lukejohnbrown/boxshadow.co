@@ -13,6 +13,18 @@
   },
   {
     "subCategoryID": "3",
+    "subCategoryTitle": "Stripe"
+  },
+  {
+    "subCategoryID": "4",
+    "subCategoryTitle": "Netlify"
+  },
+  {
+    "subCategoryID": "5",
+    "subCategoryTitle": "Discord"
+  },
+  {
+    "subCategoryID": "6",
     "subCategoryTitle": "Custom"
   }
 ]

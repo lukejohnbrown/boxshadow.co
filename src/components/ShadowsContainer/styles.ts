@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import theme from "../../theme";
 
-const SHADOW_MARGIN = 50;
+const SHADOW_MARGIN = 60;
 const SHADOW_ITEM_WIDTH = 270;
 
 export const ShadowsContainerWrapper = styled.div`

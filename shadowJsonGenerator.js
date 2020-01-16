@@ -29,4 +29,4 @@ const convertShadowToJSON = (boxShadowCSS) =>
     }, {})
   );
 
-console.log(JSON.stringify(convertShadowToJSON("0 25px 50px -12px rgba(0,0,0,0.25)")));
+console.log(JSON.stringify(convertShadowToJSON("0 2px 0 0 rgba(22,17,28,0.1)")));

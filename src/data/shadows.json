@@ -40,6 +40,26 @@
     }]
   },
   {
+    "shadowTitle": "Netlify 001",
+    "shadowCategoryID": "0",
+    "shadowSubCategoryID": "4",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "0",
+      "blur": "0",
+      "spread": "1px",
+      "color": "#FFFFFF",
+      "alpha": "0.1"
+    }, {
+      "xValue": "0",
+      "yValue": "2px",
+      "blur": "4px",
+      "spread": "0",
+      "color": "#0E1E25",
+      "alpha": "0.12"
+    }]
+  },
+  {
     "shadowTitle": "Tailwind CSS 001",
     "shadowCategoryID": "0",
     "shadowSubCategoryID": "1",
@@ -107,6 +127,26 @@
     }]
   },
   {
+    "shadowTitle": "Stripe 001",
+    "shadowCategoryID": "0",
+    "shadowSubCategoryID": "3",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "6px",
+      "blur": "12px",
+      "spread": "-2px",
+      "color": "#32325D",
+      "alpha": "0.25"
+    }, {
+      "xValue": "0",
+      "yValue": "3px",
+      "blur": "7px",
+      "spread": "-3px",
+      "color": "#000000",
+      "alpha": "0.3"
+    }]
+  },
+  {
     "shadowTitle": "Material 003",
     "shadowCategoryID": "0",
     "shadowSubCategoryID": "0",
@@ -154,6 +194,19 @@
     }]
   },
   {
+    "shadowTitle": "Discord 001",
+    "shadowCategoryID": "1",
+    "shadowSubCategoryID": "5",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "9px",
+      "blur": "30px",
+      "spread": "0",
+      "color": "#23272A",
+      "alpha": "0.1"
+    }]
+  },
+  {
     "shadowTitle": "Tailwind CSS 004",
     "shadowCategoryID": "1",
     "shadowSubCategoryID": "1",
@@ -164,6 +217,19 @@
       "spread": "-12px",
       "color": "#000000",
       "alpha": "0.25"
+    }]
+  },
+  {
+    "shadowTitle": "Netlify 002",
+    "shadowCategoryID": "1",
+    "shadowSubCategoryID": "4",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "2px",
+      "blur": "40px",
+      "spread": "0px",
+      "color": "#0E1E25",
+      "alpha": "0.16"
     }]
   },
   {
@@ -180,61 +246,142 @@
     }]
   },
   {
-    "shadowTitle": "Material 004",
+    "shadowTitle": "Bootstrap 003",
     "shadowCategoryID": "1",
     "shadowSubCategoryID": "0",
     "layers": [{
       "xValue": "0px",
-      "yValue": "5px",
-      "blur": "5px",
-      "spread": "-3px",
+      "yValue": "16px",
+      "blur": "48px",
+      "spread": "0px",
       "color": "#000000",
-      "alpha": "0.2"
-    }, {
-      "xValue": "0px",
-      "yValue": "8px",
-      "blur": "10px",
-      "spread": "1px",
-      "color": "#000000",
-      "alpha": "0.14"
-    }, {
-      "xValue": "0px",
-      "yValue": "3px",
-      "blur": "14px",
-      "spread": "2px",
-      "color": "#000000",
-      "alpha": "0.12"
-    }]
-  }, {
-    "shadowTitle": "Material 005",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [{
-      "xValue": "0px",
-      "yValue": "6px",
-      "blur": "6px",
-      "spread": "-3px",
-      "color": "#000000",
-      "alpha": "0.2"
-    }, {
-      "xValue": "0px",
-      "yValue": "10px",
-      "blur": "14px",
-      "spread": "1px",
-      "color": "#000000",
-      "alpha": "0.14"
-    }, {
-      "xValue": "0px",
-      "yValue": "4px",
-      "blur": "18px",
-      "spread": "3px",
-      "color": "#000000",
-      "alpha": "0.12"
+      "alpha": "0.175"
     }]
   },
   {
-    "shadowTitle": "Material 006",
+    "shadowTitle": "Stripe 002",
     "shadowCategoryID": "1",
+    "shadowSubCategoryID": "3",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "30px",
+      "blur": "60px",
+      "spread": "-12px",
+      "color": "#32325D",
+      "alpha": "0.25"
+    }, {
+      "xValue": "0",
+      "yValue": "18px",
+      "blur": "36px",
+      "spread": "-18px",
+      "color": "#000000",
+      "alpha": "0.3"
+    }, {
+      "xValue": "0",
+      "yValue": "-12px",
+      "blur": "36px",
+      "spread": "-8px",
+      "color": "#000000",
+      "alpha": "0.025"
+    }]
+  },
+  {
+    "shadowTitle": "Stripe 003",
+    "shadowCategoryID": "1",
+    "shadowSubCategoryID": "3",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "13px",
+      "blur": "27px",
+      "spread": "-5px",
+      "color": "#32325D",
+      "alpha": "0.25"
+    }, {
+      "xValue": "0",
+      "yValue": "8px",
+      "blur": "16px",
+      "spread": "-8px",
+      "color": "#000000",
+      "alpha": "0.3"
+    }, {
+      "xValue": "0",
+      "yValue": "-6px",
+      "blur": "16px",
+      "spread": "-6px",
+      "color": "#000000",
+      "alpha": "0.025"
+    }]
+  },
+  {
+    "shadowTitle": "Netlify 003",
+    "shadowCategoryID": "2",
+    "shadowSubCategoryID": "4",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "2px",
+      "blur": "20px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.16"
+    }]
+  },
+  {
+    "shadowTitle": "Discord 002",
+    "shadowCategoryID": "2",
+    "shadowSubCategoryID": "5",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "8px",
+      "blur": "16px",
+      "spread": "0px",
+      "color": "#040405",
+      "alpha": "0.24"
+    }]
+  },
+  {
+    "shadowTitle": "Discord 003",
+    "shadowCategoryID": "2",
+    "shadowSubCategoryID": "5",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "11px",
+      "blur": "20px",
+      "spread": "0px",
+      "color": "#202225",
+      "alpha": "0.3"
+    }]
+  },
+
+  {
+    "shadowTitle": "Stripe 004",
+    "shadowCategoryID": "2",
+    "shadowSubCategoryID": "3",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "13px",
+      "blur": "27px",
+      "spread": "-5px",
+      "color": "#32325D",
+      "alpha": "0.4"
+    }, {
+      "xValue": "0",
+      "yValue": "8px",
+      "blur": "16px",
+      "spread": "-8px",
+      "color": "#000000",
+      "alpha": "0.3"
+    }, {
+      "xValue": "0",
+      "yValue": "-6px",
+      "blur": "16px",
+      "spread": "-6px",
+      "color": "#000000",
+      "alpha": "0.025"
+    }]
+  },
+  {
+    "shadowTitle": "Material 005",
+    "shadowCategoryID": "2",
     "shadowSubCategoryID": "0",
     "layers": [{
       "xValue": "0px",
@@ -258,9 +405,10 @@
       "color": "#000000",
       "alpha": "0.12"
     }]
-  }, {
-   "shadowTitle": "Material 007",
-   "shadowCategoryID": "1",
+  },
+  {
+   "shadowTitle": "Material 006",
+   "shadowCategoryID": "2",
     "shadowSubCategoryID": "0",
     "layers": [{
       "xValue": "0px",
@@ -286,16 +434,30 @@
     }]
   },
   {
-    "shadowTitle": "Bootstrap 003",
+    "shadowTitle": "Material 007",
     "shadowCategoryID": "2",
     "shadowSubCategoryID": "0",
     "layers": [{
       "xValue": "0px",
-      "yValue": "16px",
-      "blur": "48px",
-      "spread": "0px",
+      "yValue": "5px",
+      "blur": "5px",
+      "spread": "-3px",
       "color": "#000000",
-      "alpha": "0.175"
+      "alpha": "0.2"
+    }, {
+      "xValue": "0px",
+      "yValue": "8px",
+      "blur": "10px",
+      "spread": "1px",
+      "color": "#000000",
+      "alpha": "0.14"
+    }, {
+      "xValue": "0px",
+      "yValue": "3px",
+      "blur": "14px",
+      "spread": "2px",
+      "color": "#000000",
+      "alpha": "0.12"
     }]
   },
   {
@@ -349,6 +511,137 @@
       "spread": "8px",
       "color": "#000000",
       "alpha": "0.12"
+    }]
+  },
+  {
+    "shadowTitle": "Notion",
+    "shadowCategoryID": "3",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "2px",
+      "blur": "8px",
+      "spread": "0",
+      "color": "#544623",
+      "alpha": "0.15"
+    }, {
+      "xValue": "0px",
+      "yValue": "1px",
+      "blur": "3px",
+      "spread": "0",
+      "color": "#544623",
+      "alpha": "0.15"
+    }]
+  },
+  {
+    "shadowTitle": "Notion",
+    "shadowCategoryID": "3",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "6px",
+      "blur": "20px",
+      "spread": "0",
+      "color": "#544623",
+      "alpha": "0.3"
+    }]
+  },
+  {
+    "shadowTitle": "ZEIT",
+    "shadowCategoryID": "3",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "4px",
+      "blur": "8px",
+      "spread": "0",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
+  },
+  {
+    "shadowTitle": "ZEIT",
+    "shadowCategoryID": "3",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "4px",
+      "blur": "8px",
+      "spread": "0",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
+  },
+  {
+    "shadowTitle": "ZEIT",
+    "shadowCategoryID": "3",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "5px",
+      "blur": "10px",
+      "spread": "0",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
+  },
+  {
+    "shadowTitle": "ZEIT",
+    "shadowCategoryID": "3",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "8px",
+      "blur": "30px",
+      "spread": "0",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
+  },
+  {
+    "shadowTitle": "ZEIT",
+    "shadowCategoryID": "3",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "6px",
+      "yValue": "30px",
+      "blur": "60px",
+      "spread": "0",
+      "color": "#000000",
+      "alpha": "0.12"
+    }]
+  },
+  {
+    "shadowTitle": "Sentry",
+    "shadowCategoryID": "3",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "2px",
+      "blur": "0",
+      "spread": "0",
+      "color": "#362D59",
+      "alpha": "0.15"
+    }, {
+      "xValue": "0",
+      "yValue": "0",
+      "blur": "100px",
+      "spread": "0",
+      "color": "#362D59",
+      "alpha": "0.2"
+    }]
+  },
+  {
+    "shadowTitle": "Sentry",
+    "shadowCategoryID": "3",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "2px",
+      "blur": "0",
+      "spread": "0",
+      "color": "#16111C",
+      "alpha": "0.1"
     }]
   }
 ]
