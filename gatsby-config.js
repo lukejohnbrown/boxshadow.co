@@ -6,6 +6,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-graphql-codegen`,
     //   options: {
@@ -13,12 +20,6 @@ module.exports = {
     //     codegen: true,
     //     codegenDelay: 250,
     //   }
-    // },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/data/`,
-      },
-    },
+    // }
   ],
 }
