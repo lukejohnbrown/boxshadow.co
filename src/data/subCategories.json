@@ -25,6 +25,14 @@
   },
   {
     "subCategoryID": "6",
+    "subCategoryTitle": "Notion"
+  },
+  {
+    "subCategoryID": "7",
+    "subCategoryTitle": "ZEIT"
+  },
+  {
+    "subCategoryID": "8",
     "subCategoryTitle": "Custom"
   }
 ]
