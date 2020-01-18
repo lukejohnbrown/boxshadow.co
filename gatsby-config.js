@@ -13,6 +13,17 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Hind`,
+            variants: [`400`, `500`, `600`, `700`]
+          }
+        ],
+      },
+    }
     // {
     //   resolve: `gatsby-plugin-graphql-codegen`,
     //   options: {
