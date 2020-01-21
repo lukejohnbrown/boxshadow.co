@@ -71,7 +71,6 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
       <HomeWrapper>
         <AboutBlockWrapper>
           <AboutBlock />
-          <FilterButton onClick={toggleSidebar}>Filter shadows</FilterButton>
         </AboutBlockWrapper>
 
         {/* <TitleBarWrapper>

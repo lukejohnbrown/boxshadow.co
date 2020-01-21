@@ -13,7 +13,7 @@ const palette = {
   },
   black: "#333333",
   blue: "rgba(52,35,202,1.00)",
-  green: "#12664F",
+  primary: "#12664F",
 }
 
 const sizes = ["640px", "768px", "1024px", "1280px", "1420px", "1650px"]
