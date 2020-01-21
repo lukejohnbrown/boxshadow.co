@@ -69,7 +69,7 @@ export const ShadowStatWrapper = styled.li`
 
   span {
     font-weight: 300;
-    color: ${theme.palette.blue[800]};
+    color: ${theme.palette.blue};
     margin-right: ${theme.space[4]};
     width: 60px;
   }

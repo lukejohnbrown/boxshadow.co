@@ -74,11 +74,11 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
           <FilterButton onClick={toggleSidebar}>Filter shadows</FilterButton>
         </AboutBlockWrapper>
 
-        <TitleBarWrapper>
+        {/* <TitleBarWrapper>
           <TitleBar />
         </TitleBarWrapper>
 
-        <ShadowsContainer />
+        <ShadowsContainer /> */}
       </HomeWrapper>
     </Layout>
   )

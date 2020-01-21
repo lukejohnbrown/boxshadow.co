@@ -10,10 +10,12 @@ export const AboutBlockWrapper = styled.article`
     font-weight: 600;
     font-size: ${theme.fontSize[1]};
     line-height: 1.5;
+    color:white;
   }
 
   p {
     margin-top: ${theme.space[2]};
+    color:white;
   }
 
   a {
@@ -21,14 +23,18 @@ export const AboutBlockWrapper = styled.article`
       justify-content: center;
     }
 
-    margin-top: ${theme.space[3]};
+    color: white;
+    opacity: 0.5;
+    margin-top: ${theme.space[4]};
     display: block;
     text-decoration: none;
     font-weight: 500;
     display: flex;
 
     img {
-      margin: 0 5px;
+      margin: 0 6px;
+      width: 12px;
+      transform: translateY(-1px);
     }
   }
 `;

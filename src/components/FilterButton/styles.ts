@@ -4,20 +4,19 @@ import { FilterButtonProps } from "./FilterButton";
 
 export const FilterButtonWrapper = styled.button<Partial<FilterButtonProps>>`
   display: block;
-  background: ${({ isActive }) => isActive ? theme.palette.grey[300] : "none"};
-  color: ${theme.palette.blue[800]};
+  background: white;
+  opacity: ${({ isActive }) => isActive ? "1" : "0.6"};
+  color: ${theme.palette.black};
+  font-weight: 500;
   line-height: 1em;
-  border-radius: 8px;
+  border-radius: 5px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: ${theme.space[2]};
+  padding: ${theme.space[2]} ${theme.space[2]};
   transition: all 200ms;
   outline: none;
-
-  &:hover {
-    border-bottom-color: ${theme.palette.grey[400]};
-  }
+  border: 3px solid black;
 
   span {
     margin-top: 3px;

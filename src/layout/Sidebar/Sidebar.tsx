@@ -84,14 +84,12 @@ const Sidebar: React.FC<SidebarProps> = () => {
 
   return (
     <SidebarWrapper isSidebarOpen={isSidebarOpen}>
-      <Logo src={logo} />
-
       <InnerWrapper>
         {categories && shadows && (
           <Filters>
             <FilterBlock>
               <FilterTitle>
-                Box Shadow Style
+                Shadow weight
                 <ResetButton
                   buttonTitle="Reset Category Filters"
                   onClick={() =>
@@ -118,7 +116,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
             </FilterBlock>
             <FilterBlock>
               <FilterTitle>
-                Design Library
+                Shadow source
                 <ResetButton
                   buttonTitle="Reset Design Library Filters"
                   onClick={() =>
@@ -150,7 +148,6 @@ const Sidebar: React.FC<SidebarProps> = () => {
         </AboutBlockWrapper>
       </InnerWrapper>
 
-      <SidebarButton />
     </SidebarWrapper>
   )
 };

@@ -3,7 +3,7 @@ import theme from "../theme";
 
 const GlobalStyle = createGlobalStyle`
   html,
-  body,
+body,
   div,
   span,
   applet,
@@ -98,7 +98,7 @@ const GlobalStyle = createGlobalStyle`
 
   html, body {
     font-size: 15px;
-    color: ${theme.palette.grey[900]};
+    color: ${theme.palette.black};
 
     @media ${theme.breakpoints.up.md} {
       font-size: 16px;
@@ -107,13 +107,13 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6, p, a, button {
     font-size: 1rem;
-    color: ${theme.palette.blue[900]};
+    color: ${theme.palette.black};
   }
 
   button {
     border: none;
     font-family: 'Hind', 'Helvetica', sans-serif;
   }
-`;
+`
 
 export default GlobalStyle;

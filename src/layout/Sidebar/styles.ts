@@ -4,7 +4,7 @@ import theme from "../../theme";
 export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   width: 100%;
   display: block;
-  background: ${theme.palette.grey[200]};
+  background: ${theme.palette.green};
   min-height: 100vh;
   max-height: 100%;
   overflow: scroll;
@@ -17,10 +17,12 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   transform: ${({ isSidebarOpen }) => isSidebarOpen ? "translateX(0)" : "translateX(-300px)"};
   transition: all 200ms ease-in-out;
   z-index: 2;
+  border-top: 2px solid black;
+  border-right: 3px solid black;
+  border-top-right-radius: 6px;
 
   @media ${theme.breakpoints.up.lg} {
     transform: none;
-    border-right: 2px solid ${theme.palette.grey[400]};
   }
 `;
 
@@ -49,15 +51,13 @@ export const FilterBlock = styled.div`
 `;
 
 export const FilterTitle = styled.h4`
-  text-transform: uppercase;
-  color: ${theme.palette.grey[500]};
-  font-weight: 600;
-  padding: 0 ${theme.space[2]};
-  margin-bottom: ${theme.space[2]};
+  color: white;
+  margin-bottom: ${theme.space[3]};
   line-height: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: ${theme.fontSize[1]};
 
   button {
     transform: translateY(-1px);
@@ -65,7 +65,7 @@ export const FilterTitle = styled.h4`
 `;
 
 export const InnerWrapper = styled.div`
-  padding: ${theme.space[4]};
+  padding: ${theme.space[5]} ${theme.space[4]} ${theme.space[3]} ${theme.space[4]};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,24 +79,5 @@ export const AboutBlockWrapper = styled.article`
     display: none;
   }
 
-  margin-top: ${theme.space[5]};
-`;
-
-export const SidebarButtonWrapper = styled.button`
-  display: block;
-  width: 100%;
-  background: ${theme.palette.blue[800]};
-  color: ${theme.palette.blue[100]};
-  text-align: left;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: ${theme.fontSize[-1]};
-  letter-spacing: 0.2px;
-  padding: ${theme.space[2]} ${theme.space[4]} ${theme.space[1]} ${theme.space[4]};
-  transition: all 200ms;
-
-  &:hover,
-  &:focus {
-    background: ${theme.palette.blue[900]};
-  }
+  margin-top: ${theme.space[6]};
 `;

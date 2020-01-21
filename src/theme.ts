@@ -1,4 +1,5 @@
-const palette = { // tailwind CSS color palette https://tailwindcss.com/docs/customizing-colors/
+const palette = {
+  // tailwind CSS color palette https://tailwindcss.com/docs/customizing-colors/
   grey: {
     [100]: "#F7FAFC",
     [200]: "#EDF2F7",
@@ -8,19 +9,11 @@ const palette = { // tailwind CSS color palette https://tailwindcss.com/docs/cus
     [600]: "#718096",
     [700]: "#4A5568",
     [800]: "#2D3748",
-    [900]: "#1A202C"
+    [900]: "#1A202C",
   },
-  blue: {
-    [100]: "#EBF8FF",
-    [200]: "#BEE3F8",
-    [300]: "#90CDF4",
-    [400]: "#63B3ED",
-    [500]: "#4299E1",
-    [600]: "#3182CE",
-    [700]: "#2B6CB0",
-    [800]: "#2C5282",
-    [900]: "#2A4365"
-  }
+  black: "#333333",
+  blue: "rgba(52,35,202,1.00)",
+  green: "#12664F",
 }
 
 const sizes = ["640px", "768px", "1024px", "1280px", "1420px", "1650px"]
@@ -59,9 +52,8 @@ const fontSize = {
 
 type Theme = {
   palette: {
-    blue: {
-      [key: string]: string,
-    },
+    blue: string;
+    black: string;
     grey: {
       [key: string]: string,
     },

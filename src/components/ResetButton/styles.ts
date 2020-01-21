@@ -7,14 +7,12 @@ export const ResetButtonWrapper = styled.button`
   margin: 0;
   line-height: 0;
   outline: none;
+  opacity: 0.6;
+  transition: all 200ms;
 
   &:hover,
   &:focus {
-    svg {
-      path {
-        fill: ${theme.palette.grey["500"]};
-      }
-    }
+    opacity: 1;
   }
 
   span {

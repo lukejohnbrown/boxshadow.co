@@ -5,6 +5,6 @@ export const OverlayWrapper = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
-  background: ${theme.palette.blue[900]};
+  background: ${theme.palette.blue};
   opacity: 0.7;
 `;

@@ -5,7 +5,7 @@ import { AboutBlockWrapper } from "./styles";
 export const AboutBlock: React.FC = () => {
   return (
     <AboutBlockWrapper>
-      <h1>CSS box shadows for your next project 🎉</h1>
+      <h1>CSS box shadows from around the web 🎉</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
