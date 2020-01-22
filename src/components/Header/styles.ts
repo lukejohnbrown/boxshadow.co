@@ -6,9 +6,14 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: ${theme.space[3]};
+
   @media ${theme.breakpoints.up.lg} {
     padding: 0 ${theme.space[4]};
     height: ${theme.space[7]};
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 `;
 
@@ -22,6 +27,7 @@ export const LogoText = styled.h2`
   font-weight: 700;
   font-size: ${theme.fontSize[2]};
   color: ${theme.palette.black};
+  padding-top: 2px;
 `;
 
 export const BurgerWrapper = styled.button`
@@ -31,7 +37,7 @@ export const BurgerWrapper = styled.button`
   svg {
     display: flex;
     path {
-      fill: ${theme.palette.primary};
+      fill: ${theme.palette.black};
     }
   }
 `;

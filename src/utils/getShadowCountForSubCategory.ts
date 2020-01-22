@@ -2,8 +2,8 @@ import { ShadowsJson } from "../types/graphql"
 
 export const getShadowCountForSubCategory = (
   shadows: ShadowsJson[],
-  subCategoryID: ShadowsJson["shadowSubCategoryID"]
+  categoryID: ShadowsJson["shadowSubCategoryID"]
 ) =>
   shadows.filter(
-    ({ shadowSubCategoryID }) => shadowSubCategoryID === subCategoryID
+    ({ shadowSubCategoryID }) => shadowSubCategoryID === categoryID
   ).length;

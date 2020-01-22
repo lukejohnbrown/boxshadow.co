@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { Button } from "..";
 import StatsCoursel from "./StatsCarousel";
 import { ShadowItemWrapper, Title, Subtitle, StatsCarouselWrapper } from "./styles"
 import { useShadowSubCategories } from "../../hooks";
@@ -34,7 +33,7 @@ const ShadowItem: React.FC<ShadowsJson> = ({
     <ShadowItemWrapper boxShadowStyle={boxShadowStyle}>
       <Title>{shadowTitle}</Title>
       <Subtitle>
-        {shadowSubCategory ? shadowSubCategory.subCategoryTitle : ""}
+        {shadowSubCategory ? shadowSubCategory.categoryTitle : ""}
       </Subtitle>
 
       <StatsCarouselWrapper>
@@ -45,9 +44,9 @@ const ShadowItem: React.FC<ShadowsJson> = ({
         text={`box-shadow: ${boxShadowStyle};`}
         onCopy={() => setCopied(true)}
       >
-        <Button className="shadowitem__button" onClick={() => {}}>
+        <button className="shadowitem__button" onClick={() => {}}>
           {copied ? "CSS Copied 🥳" : "Copy CSS"}
-        </Button>
+        </button>
       </CopyToClipboard>
     </ShadowItemWrapper>
   )

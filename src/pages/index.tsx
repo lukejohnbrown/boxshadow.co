@@ -73,11 +73,8 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
           <AboutBlock />
         </AboutBlockWrapper>
 
-        {/* <TitleBarWrapper>
-          <TitleBar />
-        </TitleBarWrapper>
 
-        <ShadowsContainer /> */}
+        <ShadowsContainer />
       </HomeWrapper>
     </Layout>
   )

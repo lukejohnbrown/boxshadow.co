@@ -59,10 +59,10 @@ const Sidebar: React.FC<SidebarProps> = () => {
     }
   }
 
-  const handleSubCategoryClick = (subCategoryID: SubCategoriesJson["subCategoryID"]) => {
+  const handleSubCategoryClick = (categoryID: SubCategoriesJson["categoryID"]) => {
      const updatedSubCategoryFilters = !subCategoryFiltersTouched
-       ? xor(getAllSubCategoryIDs(subCategories), [subCategoryID])
-       : xor(subCategoryFilters, [subCategoryID])
+       ? xor(getAllSubCategoryIDs(subCategories), [categoryID])
+       : xor(subCategoryFilters, [categoryID])
 
     if (updatedSubCategoryFilters) {
       setSelectedSubCategories(updatedSubCategoryFilters as string[])
@@ -124,19 +124,20 @@ const Sidebar: React.FC<SidebarProps> = () => {
                   }
                 />
               </FilterTitle>
-              {subCategories.map(({ subCategoryID, subCategoryTitle }) => (
+              {subCategories.map(({ categoryID, categoryTitle, icon }) => (
                 <FilterButton
-                  key={subCategoryID as string}
-                  id={subCategoryID as string}
-                  text={subCategoryTitle}
+                  key={categoryID as string}
+                  id={categoryID as string}
+                  text={categoryTitle}
                   onClick={handleSubCategoryClick}
                   secondaryText={getShadowCountForSubCategory(
                     shadows,
-                    subCategoryID
+                    categoryID
                   ).toString()}
+                  icon={icon}
                   isActive={
                     !subCategoryFiltersTouched ||
-                    subCategoryFilters.includes(subCategoryID as string)
+                    subCategoryFilters.includes(categoryID as string)
                   }
                 />
               ))}

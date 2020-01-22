@@ -7,7 +7,7 @@ import {
 export const filterShadowsByCategoryAndSubCategory = (
   shadows: ShadowsJson[],
   categoryFilters: CategoriesJson["categoryID"][],
-  subCategoryFilters: SubCategoriesJson["subCategoryID"][],
+  subCategoryFilters: SubCategoriesJson["categoryID"][],
   categoryFiltersTouched: boolean,
   subCategoryFiltersTouched: boolean
 ) => {

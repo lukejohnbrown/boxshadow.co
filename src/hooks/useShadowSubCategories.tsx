@@ -7,8 +7,11 @@ export const useShadowSubCategories = (): SubCategoriesJson[] => {
       query ShadowSubCategories {
         allSubCategoriesJson {
           nodes {
-            subCategoryID
-            subCategoryTitle
+            categoryID
+            categoryTitle
+            icon {
+              publicURL
+            }
           }
         }
       }

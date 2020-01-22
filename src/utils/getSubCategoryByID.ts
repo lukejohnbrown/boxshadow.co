@@ -8,5 +8,5 @@ export const getSubCategoryByID = (
   shadowSubCategoryID: ShadowsJson["shadowSubCategoryID"]
 ) =>
   subCategories.find(
-    ({ subCategoryID }) => shadowSubCategoryID === subCategoryID
+    ({ categoryID }) => shadowSubCategoryID === categoryID
   )

@@ -6,18 +6,32 @@ export type FilterButtonProps = {
   isActive?: boolean;
   text?: string | null;
   secondaryText?: string;
+  icon?: {
+    publicURL: string
+  };
   onClick?: (value: any) => void;
 }
 
-const FilterButton: React.FC<FilterButtonProps> = ({ id, isActive = false, text, secondaryText, onClick }) => (
-  <FilterButtonWrapper isActive={isActive} onClick={() => onClick && onClick(id)}>
+const FilterButton: React.FC<FilterButtonProps> = ({
+  id,
+  isActive = false,
+  text,
+  secondaryText,
+  icon,
+  onClick,
+}) => (
+  <FilterButtonWrapper
+    isActive={isActive}
+    onClick={() => onClick && onClick(id)}
+  >
     {text && (
-      <span>{text}</span>
+      <span>
+        {icon && <img src={icon.publicURL} alt={`${text} icon`} />}
+        {text}
+      </span>
     )}
-    {text && (
-      <span>{secondaryText}</span>
-    )}
+    {text && <span>{secondaryText}</span>}
   </FilterButtonWrapper>
-);
+)
 
 export default FilterButton;

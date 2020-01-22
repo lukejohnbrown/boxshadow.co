@@ -1,38 +1,46 @@
 [
   {
-    "subCategoryID": "0",
-    "subCategoryTitle": "Google Material"
+    "categoryID": "0",
+    "categoryTitle": "Google Material",
+    "icon": "../images/google.svg"
   },
   {
-    "subCategoryID": "1",
-    "subCategoryTitle": "Tailwind CSS"
+    "categoryID": "1",
+    "categoryTitle": "Tailwind CSS",
+    "icon": "../images/tailwind.svg"
   },
   {
-    "subCategoryID": "2",
-    "subCategoryTitle": "Bootstrap"
+    "categoryID": "2",
+    "categoryTitle": "Bootstrap",
+    "icon": "../images/bootstrap.svg"
   },
   {
-    "subCategoryID": "3",
-    "subCategoryTitle": "Stripe"
+    "categoryID": "3",
+    "categoryTitle": "Stripe",
+    "icon": "../images/stripe.svg"
   },
   {
-    "subCategoryID": "4",
-    "subCategoryTitle": "Netlify"
+    "categoryID": "4",
+    "categoryTitle": "Netlify",
+    "icon": "../images/netlify.svg"
   },
   {
-    "subCategoryID": "5",
-    "subCategoryTitle": "Discord"
+    "categoryID": "5",
+    "categoryTitle": "Discord",
+    "icon": "../images/discord.svg"
   },
   {
-    "subCategoryID": "6",
-    "subCategoryTitle": "Notion"
+    "categoryID": "6",
+    "categoryTitle": "Notion",
+    "icon": "../images/notion.svg"
   },
   {
-    "subCategoryID": "7",
-    "subCategoryTitle": "ZEIT"
+    "categoryID": "7",
+    "categoryTitle": "ZEIT",
+    "icon": "../images/zeit.svg"
   },
   {
-    "subCategoryID": "8",
-    "subCategoryTitle": "Custom"
+    "categoryID": "8",
+    "categoryTitle": "Custom"
   }
 ]
