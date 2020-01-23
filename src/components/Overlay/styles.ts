@@ -7,4 +7,5 @@ export const OverlayWrapper = styled.div`
   height: 100%;
   background: ${theme.palette.black};
   opacity: 0.7;
+  z-index: 3;
 `;

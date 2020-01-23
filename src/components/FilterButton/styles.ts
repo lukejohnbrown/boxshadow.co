@@ -16,7 +16,7 @@ export const FilterButtonWrapper = styled.button<Partial<FilterButtonProps>>`
   padding: ${theme.space[2]} ${theme.space[2]};
   transition: all 200ms;
   outline: none;
-  border: 3px solid black;
+  border: 2px solid black;
 
   span {
     margin-top: 3px;

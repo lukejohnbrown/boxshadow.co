@@ -1,12 +1,7 @@
 import React, { Fragment } from 'react';
 import ScrollContainer from "react-indiana-drag-scroll"
-import {
-  ShadowsContainerWrapper,
-  ShadowsContainerTitle,
-  ShadowItemWrapper,
-  ShadowItemsWrapper,
-  ScrollWrapper,
-} from "./styles"
+
+import dragIcon from "../../images/drag-icon.svg";
 import { ShadowItem } from "../";
 import {
   useShadowCategories,
@@ -14,6 +9,15 @@ import {
 } from "../../hooks";
 import { filterShadowsByCategoryAndSubCategory, constructShadowsByCategory } from "../../utils";
 import { useFilters } from "../../FiltersProvider";
+
+import {
+  ShadowsContainerWrapper,
+  ShadowsContainerTitle,
+  ShadowItemWrapper,
+  ShadowItemsWrapper,
+  ScrollWrapper,
+  ShadowsContainerHint,
+} from "./styles"
 
 const ShadowsContainer = () => {
   const shadows = useShadows();
@@ -47,11 +51,18 @@ const ShadowsContainer = () => {
           </ShadowsContainerTitle>
         )}
 
-        {shadowsByCategory.map(({ categoryTitle, categoryID, shadows }) => (
+        {shadowsByCategory.map(({ categoryTitle, categoryID, shadows }, idx) => (
           <Fragment key={categoryID as string}>
             {shadows.length !== 0 && (
               <>
-                <ShadowsContainerTitle>{categoryTitle}</ShadowsContainerTitle>
+                <ShadowsContainerTitle>
+                  {categoryTitle}
+                  {idx === 0 && (
+                    <ShadowsContainerHint>
+                      <img src={dragIcon} /> Pst, you can drag shadows to explore more...
+                    </ShadowsContainerHint>
+                  )}
+                </ShadowsContainerTitle>
                 <ScrollContainer className="scroll-container">
                   <ShadowItemsWrapper shadowCount={shadows.length}>
                     {shadows.map(shadow => (

@@ -16,10 +16,14 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   width: 300px;
   transform: ${({ isSidebarOpen }) => isSidebarOpen ? "translateX(0)" : "translateX(-300px)"};
   transition: all 200ms ease-in-out;
-  z-index: 2;
+  z-index: 4;
   border-top: 2px solid black;
-  border-right: 3px solid black;
+  border-right: 2px solid black;
   border-top-right-radius: 6px;
+
+  &::-webkit-scrollbar {
+    display:none;
+  }
 
   @media ${theme.breakpoints.up.lg} {
     transform: none;
@@ -36,18 +40,15 @@ export const Logo = styled.img`
   margin: ${theme.space[5]} ${theme.space[4]} ${theme.space[5]} ${theme.space[4]};
 `;
 
-export const Filters = styled.div`
-
-`;
 
 export const FilterBlock = styled.div`
   &:not(:last-child) {
-    margin-bottom: ${theme.space[6]};
+    margin-bottom: ${theme.space[4]};
   }
 
    button {
     &:not(:last-child) {
-      margin-bottom: 4px
+      margin-bottom: 5px
     }
   }
 `;

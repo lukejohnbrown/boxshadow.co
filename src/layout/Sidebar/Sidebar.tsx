@@ -3,7 +3,6 @@ import xor from "lodash.xor";
 import { navigate } from "gatsby";
 import { FilterButton, ResetButton } from "../../components";
 import logo from "../../images/logo.svg";
-import SidebarButton from "./SidebarButton";
 import { useSidebar } from "../../SidebarProvider";
 import { useFilters } from "../../FiltersProvider";
 import { AboutBlock } from "../../components";
@@ -12,7 +11,6 @@ import { useShadowCategories, useShadows, useShadowSubCategories } from "../../h
 import { CategoriesJson, SubCategoriesJson } from "../../types/graphql";
 import {
   FilterBlock,
-  Filters,
   FilterTitle,
   InnerWrapper,
   Logo,
@@ -86,7 +84,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
     <SidebarWrapper isSidebarOpen={isSidebarOpen}>
       <InnerWrapper>
         {categories && shadows && (
-          <Filters>
+          <>
             <FilterBlock>
               <FilterTitle>
                 Shadow weight
@@ -142,7 +140,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
                 />
               ))}
             </FilterBlock>
-          </Filters>
+          </>
         )}
         <AboutBlockWrapper>
           <AboutBlock />

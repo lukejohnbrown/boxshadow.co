@@ -6,17 +6,13 @@ export const AboutBlockWrapper = styled.div`
     display: none;
   }
 
+  background: ${theme.palette.primary};
   padding: ${theme.space[5]} ${theme.space[2]};
-  max-width: 440px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
-  @media ${theme.breakpoints.up.md} {
-    max-width: 400px;
-  }
-`;
+`
 
 export const FilterButton = styled.button`
   background: ${theme.palette.grey[200]};

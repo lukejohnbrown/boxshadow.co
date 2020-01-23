@@ -2,30 +2,57 @@ import styled from "styled-components";
 import theme from "../../theme";
 
 const SHADOW_MARGIN = 60;
-const SHADOW_ITEM_WIDTH = 270;
+const SHADOW_ITEM_WIDTH = 250;
 
 export const ShadowsContainerWrapper = styled.div`
   background: white;
-  border: 1px solid pink;
-
   min-height: 100vh;
+
+  @media ${theme.breakpoints.up.lg} {
+    margin-top: 40px;
+  }
 `;
 
 export const ShadowsContainerTitle = styled.h3`
-  font-size: ${theme.fontSize[1]};
+  font-size: 1.3rem;
   font-weight: 600;
   margin-left: 15px;
   transform: translateY(${theme.space[4]});
 
   @media (min-width: 600px) {
     margin-left: ${SHADOW_MARGIN}px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: ${theme.space[5]};
+  }
+`;
+
+export const ShadowsContainerHint = styled.h4`
+  display: flex;
+  align-items: center;
+  margin-top: ${theme.space[1]};
+  line-height: 1.2;
+  font-weight: 400;
+
+  @media (min-width: 600px) {
+    margin-top: -5px;
   }
 
+  @media ${theme.breakpoints.up.lg} {
+    margin-top: 5px;
+  }
+
+  img {
+    margin-right: ${theme.space[1]};
+    width: 25px;
+  }
 `;
 
 export const ScrollWrapper = styled.div`
   overflow: scroll;
   padding: ${theme.space[3]} 0;
+
   &::-webkit-scrollbar {
     display:none;
   }
@@ -54,4 +81,5 @@ export const ShadowItemWrapper = styled.div`
     }
   }
 `
+
 

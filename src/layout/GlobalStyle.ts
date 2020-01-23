@@ -112,6 +112,7 @@ body,
 
   button {
     border: none;
+    background: none;
     font-family: 'Hind', 'Helvetica', sans-serif;
   }
 `

@@ -6,7 +6,7 @@ export const ShadowItemWrapper = styled.div<{
   boxShadowStyle: string | undefined
 }>`
   box-shadow: ${({ boxShadowStyle }) => boxShadowStyle};
-  border: 3px solid ${theme.palette.black};
+  border: 2px solid ${theme.palette.black};
   border-radius: 4px;
   position: relative;
 
@@ -34,7 +34,7 @@ export const TitleWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: ${theme.space[2]} ${theme.space[3]};
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
   background: #F1F1F1;
 `
 export const CategoryLogo = styled.img`
@@ -47,8 +47,6 @@ export const Title = styled.h3`
   font-weight: 500;
   line-height: 1.3;
 `;
-
-
 
 export const StatsCarouselWrapper = styled.div`
   margin: ${theme.space[3]};

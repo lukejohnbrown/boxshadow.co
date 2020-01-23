@@ -21,7 +21,7 @@ const StatsCarousel: React.FC<StatsCarouselProps> = ({ shadowLayers }) => {
   return (
     <CarouselProvider
       naturalSlideWidth={100}
-      naturalSlideHeight={70}
+      naturalSlideHeight={75}
       infinite
       totalSlides={shadowLayers.length}
     >
