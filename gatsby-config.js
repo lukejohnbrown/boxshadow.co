@@ -33,14 +33,14 @@ module.exports = {
           },
         ],
       },
-    },
-    {
-      resolve: `gatsby-plugin-graphql-codegen`,
-      options: {
-        fileName: `src/types/graphql.ts`,
-        codegen: true,
-        codegenDelay: 250,
-      }
     }
+    // {
+    //   resolve: `gatsby-plugin-graphql-codegen`,
+    //   options: {
+    //     fileName: `src/types/graphql.ts`,
+    //     codegen: true,
+    //     codegenDelay: 250,
+    //   }
+    // }
   ],
 }

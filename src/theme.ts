@@ -54,6 +54,7 @@ type Theme = {
   palette: {
     blue: string;
     black: string;
+    primary: string;
     grey: {
       [key: string]: string,
     },

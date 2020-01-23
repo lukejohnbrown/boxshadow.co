@@ -10,7 +10,7 @@ export const HeaderWrapper = styled.div`
   @media ${theme.breakpoints.up.lg} {
     padding: 0 ${theme.space[4]};
     height: ${theme.space[7]};
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;

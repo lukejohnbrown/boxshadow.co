@@ -21,7 +21,7 @@ const StatsCarousel: React.FC<StatsCarouselProps> = ({ shadowLayers }) => {
   return (
     <CarouselProvider
       naturalSlideWidth={100}
-      naturalSlideHeight={73}
+      naturalSlideHeight={70}
       infinite
       totalSlides={shadowLayers.length}
     >
@@ -30,7 +30,6 @@ const StatsCarousel: React.FC<StatsCarouselProps> = ({ shadowLayers }) => {
           shadowLayers.map(
             ({ color, alpha, blur, spread, xValue, yValue }, idx) => (
               <Slide index={idx}>
-                <ShadowLayerTitle>Shadow Layer {idx + 1}</ShadowLayerTitle>
                 <ShadowStats
                   shadowStats={[
                     {

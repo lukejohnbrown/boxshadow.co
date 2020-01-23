@@ -1693,10 +1693,10 @@ export type Query = {
   allDirectory: DirectoryConnection,
   imageSharp?: Maybe<ImageSharp>,
   allImageSharp: ImageSharpConnection,
-  shadowsJson?: Maybe<ShadowsJson>,
-  allShadowsJson: ShadowsJsonConnection,
   subCategoriesJson?: Maybe<SubCategoriesJson>,
   allSubCategoriesJson: SubCategoriesJsonConnection,
+  shadowsJson?: Maybe<ShadowsJson>,
+  allShadowsJson: ShadowsJsonConnection,
   categoriesJson?: Maybe<CategoriesJson>,
   allCategoriesJson: CategoriesJsonConnection,
   site?: Maybe<Site>,
@@ -1833,6 +1833,25 @@ export type QueryAllImageSharpArgs = {
 };
 
 
+export type QuerySubCategoriesJsonArgs = {
+  id?: Maybe<StringQueryOperatorInput>,
+  parent?: Maybe<NodeFilterInput>,
+  children?: Maybe<NodeFilterListInput>,
+  internal?: Maybe<InternalFilterInput>,
+  categoryID?: Maybe<StringQueryOperatorInput>,
+  categoryTitle?: Maybe<StringQueryOperatorInput>,
+  icon?: Maybe<FileFilterInput>
+};
+
+
+export type QueryAllSubCategoriesJsonArgs = {
+  filter?: Maybe<SubCategoriesJsonFilterInput>,
+  sort?: Maybe<SubCategoriesJsonSortInput>,
+  skip?: Maybe<Scalars['Int']>,
+  limit?: Maybe<Scalars['Int']>
+};
+
+
 export type QueryShadowsJsonArgs = {
   id?: Maybe<StringQueryOperatorInput>,
   parent?: Maybe<NodeFilterInput>,
@@ -1848,25 +1867,6 @@ export type QueryShadowsJsonArgs = {
 export type QueryAllShadowsJsonArgs = {
   filter?: Maybe<ShadowsJsonFilterInput>,
   sort?: Maybe<ShadowsJsonSortInput>,
-  skip?: Maybe<Scalars['Int']>,
-  limit?: Maybe<Scalars['Int']>
-};
-
-
-export type QuerySubCategoriesJsonArgs = {
-  id?: Maybe<StringQueryOperatorInput>,
-  parent?: Maybe<NodeFilterInput>,
-  children?: Maybe<NodeFilterListInput>,
-  internal?: Maybe<InternalFilterInput>,
-  categoryID?: Maybe<StringQueryOperatorInput>,
-  categoryTitle?: Maybe<StringQueryOperatorInput>,
-  icon?: Maybe<FileFilterInput>
-};
-
-
-export type QueryAllSubCategoriesJsonArgs = {
-  filter?: Maybe<SubCategoriesJsonFilterInput>,
-  sort?: Maybe<SubCategoriesJsonSortInput>,
   skip?: Maybe<Scalars['Int']>,
   limit?: Maybe<Scalars['Int']>
 };

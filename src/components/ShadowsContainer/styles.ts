@@ -6,23 +6,21 @@ const SHADOW_ITEM_WIDTH = 270;
 
 export const ShadowsContainerWrapper = styled.div`
   background: white;
-  border-top: 2px solid ${theme.palette.grey[400]};
+  border: 1px solid pink;
+
   min-height: 100vh;
 `;
 
 export const ShadowsContainerTitle = styled.h3`
   font-size: ${theme.fontSize[1]};
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 15px;
-  transform: translateY(${theme.space[3]});
+  transform: translateY(${theme.space[4]});
 
   @media (min-width: 600px) {
     margin-left: ${SHADOW_MARGIN}px;
   }
 
-  @media ${theme.breakpoints.up.lg} {
-   font-size: ${theme.fontSize[2]};
-  }
 `;
 
 export const ScrollWrapper = styled.div`

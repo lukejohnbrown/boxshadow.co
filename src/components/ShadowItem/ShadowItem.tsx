@@ -2,7 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import StatsCoursel from "./StatsCarousel";
-import { ShadowItemWrapper, Title, Subtitle, StatsCarouselWrapper } from "./styles"
+import {
+  ShadowItemWrapper,
+  Title,
+  CopyButton,
+  StatsCarouselWrapper,
+  TitleWrapper,
+  CategoryLogo
+} from "./styles"
 import { useShadowSubCategories } from "../../hooks";
 import {
   ShadowsJson,
@@ -31,23 +38,27 @@ const ShadowItem: React.FC<ShadowsJson> = ({
 
   return (
     <ShadowItemWrapper boxShadowStyle={boxShadowStyle}>
-      <Title>{shadowTitle}</Title>
-      <Subtitle>
-        {shadowSubCategory ? shadowSubCategory.categoryTitle : ""}
-      </Subtitle>
+      <TitleWrapper>
+        {shadowSubCategory && shadowSubCategory.icon && (
+          <CategoryLogo
+            src={shadowSubCategory.icon.publicURL || ""}
+            alt={`${shadowSubCategory.categoryTitle} icon`}
+          />
+        )}
+        <Title>{shadowTitle}</Title>
+      </TitleWrapper>
 
       <StatsCarouselWrapper>
         <StatsCoursel shadowLayers={layers} />
+        <CopyToClipboard
+          text={`box-shadow: ${boxShadowStyle};`}
+          onCopy={() => setCopied(true)}
+        >
+          <CopyButton copied={copied}>
+            {copied ? "CSS Copied 🥳" : "Copy CSS"}
+          </CopyButton>
+        </CopyToClipboard>
       </StatsCarouselWrapper>
-
-      <CopyToClipboard
-        text={`box-shadow: ${boxShadowStyle};`}
-        onCopy={() => setCopied(true)}
-      >
-        <button className="shadowitem__button" onClick={() => {}}>
-          {copied ? "CSS Copied 🥳" : "Copy CSS"}
-        </button>
-      </CopyToClipboard>
     </ShadowItemWrapper>
   )
 }
