@@ -38,9 +38,5 @@
     "categoryID": "7",
     "categoryTitle": "ZEIT",
     "icon": "../images/zeit.svg"
-  },
-  {
-    "categoryID": "8",
-    "categoryTitle": "Custom"
   }
 ]

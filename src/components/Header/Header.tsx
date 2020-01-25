@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <LogoText>boxshadow.co</LogoText>
-      <ButtonWrapper>
+      {/* <ButtonWrapper>
         <Button onClick={() => {}}>Suggest shadow</Button>
-      </ButtonWrapper>
+      </ButtonWrapper> */}
       <Burger />
     </HeaderWrapper>
   )

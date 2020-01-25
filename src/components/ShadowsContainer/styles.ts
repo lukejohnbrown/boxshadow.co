@@ -9,7 +9,7 @@ export const ShadowsContainerWrapper = styled.div`
   min-height: 100vh;
 
   @media ${theme.breakpoints.up.lg} {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 `;
 
@@ -28,7 +28,7 @@ export const ShadowsContainerTitle = styled.h3`
   }
 `;
 
-export const ShadowsContainerHint = styled.h4`
+export const ShadowsContainerHint = styled.span`
   display: flex;
   align-items: center;
   margin-top: ${theme.space[1]};

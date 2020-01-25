@@ -6,7 +6,7 @@ import theme from "../theme";
 import GlobalStyle from "./GlobalStyle";
 import Sidebar from "./Sidebar";
 import { useSidebar } from "../SidebarProvider";
-import { TopBar, Overlay, Header } from "../components";
+import { Overlay, Header } from "../components";
 
 type FilterItem = {
   id: string;
@@ -27,24 +27,24 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
   const { isSidebarOpen } = useSidebar();
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Helmet
-        title="Box Shadows"
-        meta={[
-          { name: "description", content: "Sample" },
-          { name: "keywords", content: "sample, something" },
-        ]}
-      />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Helmet
+          title="Box Shadows"
+          meta={[
+            { name: "description", content: "Sample" },
+            { name: "keywords", content: "sample, something" },
+          ]}
+        />
 
-      {isSidebarOpen && <Overlay />}
+        {isSidebarOpen && <Overlay />}
 
-      <Header />
+        <Header />
 
-      <Sidebar />
+        <Sidebar />
 
-      <main>{children}</main>
-    </ThemeProvider>
+        <main>{children}</main>
+      </ThemeProvider>
   )
 };
 

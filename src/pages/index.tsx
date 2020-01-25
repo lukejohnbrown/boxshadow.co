@@ -5,7 +5,7 @@ import queryString from "query-string"
 import Layout from "../layout"
 import { useSidebar } from "../SidebarProvider"
 import { useFilters } from "../FiltersProvider"
-import { AboutBlock, TitleBar, ShadowsContainer } from "../components"
+import { AboutBlock, ShadowsContainer } from "../components"
 import {
   AboutBlockWrapper,
   FilterButton,
@@ -72,8 +72,6 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
         <AboutBlockWrapper>
           <AboutBlock />
         </AboutBlockWrapper>
-
-
         <ShadowsContainer />
       </HomeWrapper>
     </Layout>

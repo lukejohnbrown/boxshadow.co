@@ -29,7 +29,7 @@ const StatsCarousel: React.FC<StatsCarouselProps> = ({ shadowLayers }) => {
         {shadowLayers &&
           shadowLayers.map(
             ({ color, alpha, blur, spread, xValue, yValue }, idx) => (
-              <Slide index={idx}>
+              <Slide index={idx} key={idx}>
                 <ShadowStats
                   shadowStats={[
                     {

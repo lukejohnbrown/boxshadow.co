@@ -16,6 +16,7 @@ import {
   Logo,
   SidebarWrapper,
   AboutBlockWrapper,
+  Filters,
 } from "./styles"
 
 export type SidebarProps = {
@@ -84,14 +85,16 @@ const Sidebar: React.FC<SidebarProps> = () => {
     <SidebarWrapper isSidebarOpen={isSidebarOpen}>
       <InnerWrapper>
         {categories && shadows && (
-          <>
+          <Filters>
             <FilterBlock>
               <FilterTitle>
                 Shadow weight
                 <ResetButton
                   buttonTitle="Reset Category Filters"
                   onClick={() =>
-                    setSelectedCategories(getAllCategoryIDs(categories) as string[])
+                    setSelectedCategories(
+                      getAllCategoryIDs(categories) as string[]
+                    )
                   }
                 />
               </FilterTitle>
@@ -118,7 +121,9 @@ const Sidebar: React.FC<SidebarProps> = () => {
                 <ResetButton
                   buttonTitle="Reset Design Library Filters"
                   onClick={() =>
-                    setSelectedSubCategories(getAllSubCategoryIDs(subCategories) as string[])
+                    setSelectedSubCategories(
+                      getAllSubCategoryIDs(subCategories) as string[]
+                    )
                   }
                 />
               </FilterTitle>
@@ -140,13 +145,12 @@ const Sidebar: React.FC<SidebarProps> = () => {
                 />
               ))}
             </FilterBlock>
-          </>
+          </Filters>
         )}
         <AboutBlockWrapper>
           <AboutBlock />
         </AboutBlockWrapper>
       </InnerWrapper>
-
     </SidebarWrapper>
   )
 };

@@ -42,9 +42,7 @@ export const Logo = styled.img`
 
 
 export const FilterBlock = styled.div`
-  &:not(:last-child) {
-    margin-bottom: ${theme.space[4]};
-  }
+  margin-bottom: ${theme.space[7]};
 
    button {
     &:not(:last-child) {
@@ -66,6 +64,8 @@ export const FilterTitle = styled.h4`
     transform: translateY(-1px);
   }
 `;
+
+export const Filters = styled.div``;
 
 export const InnerWrapper = styled.div`
   padding: ${theme.space[5]} ${theme.space[4]} ${theme.space[3]} ${theme.space[4]};

@@ -35,6 +35,9 @@ export const BurgerWrapper = styled.button`
   @media ${theme.breakpoints.up.lg} {
     display: none;
   }
+
+  transform: translateY(2px);
+
   svg {
     display: flex;
     path {
