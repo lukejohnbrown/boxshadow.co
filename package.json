@@ -53,6 +53,7 @@
     "component": "mkdir src/components/$NAME && cd src/components/$NAME && touch $NAME.tsx && touch index.ts && touch styles.ts && echo \"export { default } from './$NAME';\" >> index.ts && echo \"import styled from 'styled-components'; >> styles.ts\""
   },
   "devDependencies": {
+    "@types/color": "^3.0.1",
     "@types/node": "^13.1.7",
     "@types/react": "16.9.17",
     "@types/react-dom": "16.9.4",

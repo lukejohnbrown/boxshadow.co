@@ -6,7 +6,6 @@ export const ShadowItemWrapper = styled.div<{
   boxShadowStyle: string | undefined
 }>`
   box-shadow: ${({ boxShadowStyle }) => boxShadowStyle};
-  border: 2px solid ${theme.palette.black};
   border-radius: 4px;
   position: relative;
 
@@ -33,23 +32,24 @@ export const TitleWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: ${theme.space[2]} ${theme.space[3]};
-  border-bottom: 2px solid black;
+  padding: ${theme.space[3]} ${theme.space[3]} calc(${theme.space[3]} - 3px) ${theme.space[3]};
   background: #F1F1F1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 `
 export const CategoryLogo = styled.img`
-  min-width: 20px;
+  min-width: 15px;
   transform: translateY(-1px);
 `;
 
 export const Title = styled.h3`
-  font-size: ${theme.fontSize[1]};
+  font-size: ${theme.fontSize[0.5]};
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1;
 `;
 
 export const StatsCarouselWrapper = styled.div`
-  margin: ${theme.space[3]};
+  padding: ${theme.space[4]} ${theme.space[3]};
   position: relative;
 `;
 
@@ -90,8 +90,8 @@ export const CopyButton = styled.button<{
   font-weight: 700;
   text-decoration: ${({ copied }) => copied ? "none" : "underline"};
   position: absolute;
-  bottom: -1px;
-  right:0;
+  bottom: calc(${theme.space[4]} - 5px);
+  right: ${theme.space[3]};
   padding: 0;
   margin: 0;
   line-height: 1;
