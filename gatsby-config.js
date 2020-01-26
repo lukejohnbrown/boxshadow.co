@@ -15,17 +15,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
-      options:
-        {
-          path: `./src/data/`,
-        },
+      options: {
+        path: `./src/data/`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options:
-        {
-          path: `./src/images/`,
-        },
+      options: {
+        path: `./src/images/`,
+      },
     },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -44,8 +42,39 @@ module.exports = {
         dsn: process.env.SENTRY_DSN,
         environment: process.env.NODE_ENV,
         // enabled: (() => ["production", "stage"].indexOf(process.env.NODE_ENV) !== -1)()
-      }
-    }
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/favicon.png",
+
+        // WebApp Manifest Configuration
+        appName: "boxshadow.co", // Inferred with your package.json
+        appDescription: "Collection of CSS box shadows for your next project",
+        developerName: "Luke Brown",
+        developerURL: "https://lukebrown.io",
+        dir: "auto",
+        lang: "en-US",
+        background: "#fff",
+        theme_color: "#fff",
+        display: "standalone",
+        orientation: "any",
+        start_url: "/",
+        version: "1.0",
+
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          yandex: false,
+          windows: false,
+        },
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-graphql-codegen`,
     //   options: {

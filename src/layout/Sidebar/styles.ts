@@ -17,6 +17,8 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   transform: ${({ isSidebarOpen }) => isSidebarOpen ? "translateX(0)" : "translateX(-300px)"};
   transition: all 200ms ease-in-out;
   z-index: 4;
+  /* border-top: 2px solid black;
+  border-right: 2px solid black; */
   border-top-right-radius: 6px;
 
   &::-webkit-scrollbar {

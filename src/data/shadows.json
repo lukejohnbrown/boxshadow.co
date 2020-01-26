@@ -13,33 +13,6 @@
     }]
   },
   {
-    "shadowTitle": "Material 001",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [{
-      "xValue": "0px",
-      "yValue": "2px",
-      "blur": "1px",
-      "spread": "-1px",
-      "color": "#000000",
-      "alpha": "0.2"
-    }, {
-      "xValue": "0px",
-      "yValue": "1px",
-      "blur": "1px",
-      "spread": "0px",
-      "color": "#000000",
-      "alpha": "0.14"
-    }, {
-      "xValue": "0px",
-      "yValue": "1px",
-      "blur": "3px",
-      "spread": "0px",
-      "color": "#000000",
-      "alpha": "0.12"
-    }]
-  },
-  {
     "shadowTitle": "Netlify 001",
     "shadowCategoryID": "0",
     "shadowSubCategoryID": "4",
@@ -126,33 +99,6 @@
     }]
   },
   {
-    "shadowTitle": "Material 002",
-    "shadowCategoryID": "0",
-    "shadowSubCategoryID": "0",
-    "layers": [{
-      "xValue": "0px",
-      "yValue": "3px",
-      "blur": "1px",
-      "spread": "-2px",
-      "color": "#000000",
-      "alpha": "0.2"
-    }, {
-      "xValue": "0px",
-      "yValue": "2px",
-      "blur": "2px",
-      "spread": "0px",
-      "color": "#000000",
-      "alpha": "0.14"
-    }, {
-      "xValue": "0px",
-      "yValue": "1px",
-      "blur": "5px",
-      "spread": "0px",
-      "color": "#000000",
-      "alpha": "0.12"
-    }]
-  },
-  {
     "shadowTitle": "Notion 001",
     "shadowCategoryID": "0",
     "shadowSubCategoryID": "6",
@@ -172,6 +118,59 @@
       "alpha": "0.15"
     }]
   },
+   {
+     "shadowTitle": "Material 001",
+     "shadowCategoryID": "0",
+     "shadowSubCategoryID": "0",
+     "layers": [{
+       "xValue": "0px",
+       "yValue": "2px",
+       "blur": "1px",
+       "spread": "-1px",
+       "color": "#000000",
+       "alpha": "0.2"
+     }, {
+       "xValue": "0px",
+       "yValue": "1px",
+       "blur": "1px",
+       "spread": "0px",
+       "color": "#000000",
+       "alpha": "0.14"
+     }, {
+       "xValue": "0px",
+       "yValue": "1px",
+       "blur": "3px",
+       "spread": "0px",
+       "color": "#000000",
+       "alpha": "0.12"
+     }]
+   }, {
+     "shadowTitle": "Material 002",
+     "shadowCategoryID": "0",
+     "shadowSubCategoryID": "0",
+     "layers": [{
+       "xValue": "0px",
+       "yValue": "3px",
+       "blur": "1px",
+       "spread": "-2px",
+       "color": "#000000",
+       "alpha": "0.2"
+     }, {
+       "xValue": "0px",
+       "yValue": "2px",
+       "blur": "2px",
+       "spread": "0px",
+       "color": "#000000",
+       "alpha": "0.14"
+     }, {
+       "xValue": "0px",
+       "yValue": "1px",
+       "blur": "5px",
+       "spread": "0px",
+       "color": "#000000",
+       "alpha": "0.12"
+     }]
+   },
   {
     "shadowTitle": "Stripe 001",
     "shadowCategoryID": "0",
@@ -220,6 +219,32 @@
     }]
   },
   {
+    "shadowTitle": "Netlify 002",
+    "shadowCategoryID": "1",
+    "shadowSubCategoryID": "4",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "2px",
+      "blur": "40px",
+      "spread": "0px",
+      "color": "#0E1E25",
+      "alpha": "0.16"
+    }]
+  },
+  {
+    "shadowTitle": "Discord 001",
+    "shadowCategoryID": "1",
+    "shadowSubCategoryID": "5",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "9px",
+      "blur": "30px",
+      "spread": "0",
+      "color": "#23272A",
+      "alpha": "0.1"
+    }]
+  },
+  {
     "shadowTitle": "Tailwind CSS 003",
     "shadowCategoryID": "1",
     "shadowSubCategoryID": "1",
@@ -237,19 +262,6 @@
       "spread": "-5px",
       "color": "#000000",
       "alpha": "0.04"
-    }]
-  },
-  {
-    "shadowTitle": "Discord 001",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "5",
-    "layers": [{
-      "xValue": "0",
-      "yValue": "9px",
-      "blur": "30px",
-      "spread": "0",
-      "color": "#23272A",
-      "alpha": "0.1"
     }]
   },
   {
@@ -292,19 +304,6 @@
     }]
   },
   {
-    "shadowTitle": "Netlify 002",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "4",
-    "layers": [{
-      "xValue": "0",
-      "yValue": "2px",
-      "blur": "40px",
-      "spread": "0px",
-      "color": "#0E1E25",
-      "alpha": "0.16"
-    }]
-  },
-  {
     "shadowTitle": "Bootstrap 002",
     "shadowCategoryID": "1",
     "shadowSubCategoryID": "2",
@@ -318,73 +317,6 @@
     }]
   },
   {
-    "shadowTitle": "Bootstrap 003",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "0",
-    "layers": [{
-      "xValue": "0px",
-      "yValue": "16px",
-      "blur": "48px",
-      "spread": "0px",
-      "color": "#000000",
-      "alpha": "0.175"
-    }]
-  },
-  {
-    "shadowTitle": "Stripe 002",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "3",
-    "layers": [{
-      "xValue": "0",
-      "yValue": "30px",
-      "blur": "60px",
-      "spread": "-12px",
-      "color": "#32325D",
-      "alpha": "0.25"
-    }, {
-      "xValue": "0",
-      "yValue": "18px",
-      "blur": "36px",
-      "spread": "-18px",
-      "color": "#000000",
-      "alpha": "0.3"
-    }, {
-      "xValue": "0",
-      "yValue": "-12px",
-      "blur": "36px",
-      "spread": "-8px",
-      "color": "#000000",
-      "alpha": "0.025"
-    }]
-  },
-  {
-    "shadowTitle": "Stripe 003",
-    "shadowCategoryID": "1",
-    "shadowSubCategoryID": "3",
-    "layers": [{
-      "xValue": "0",
-      "yValue": "13px",
-      "blur": "27px",
-      "spread": "-5px",
-      "color": "#32325D",
-      "alpha": "0.25"
-    }, {
-      "xValue": "0",
-      "yValue": "8px",
-      "blur": "16px",
-      "spread": "-8px",
-      "color": "#000000",
-      "alpha": "0.3"
-    }, {
-      "xValue": "0",
-      "yValue": "-6px",
-      "blur": "16px",
-      "spread": "-6px",
-      "color": "#000000",
-      "alpha": "0.025"
-    }]
-  },
-  {
     "shadowTitle": "Netlify 003",
     "shadowCategoryID": "2",
     "shadowSubCategoryID": "4",
@@ -395,6 +327,19 @@
       "spread": "0px",
       "color": "#000000",
       "alpha": "0.16"
+    }]
+  },
+  {
+    "shadowTitle": "Bootstrap 003",
+    "shadowCategoryID": "2",
+    "shadowSubCategoryID": "0",
+    "layers": [{
+      "xValue": "0px",
+      "yValue": "16px",
+      "blur": "48px",
+      "spread": "0px",
+      "color": "#000000",
+      "alpha": "0.175"
     }]
   },
   {
@@ -436,7 +381,59 @@
       "alpha": "0.3"
     }]
   },
-
+  {
+    "shadowTitle": "Stripe 002",
+    "shadowCategoryID": "2",
+    "shadowSubCategoryID": "3",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "30px",
+      "blur": "60px",
+      "spread": "-12px",
+      "color": "#32325D",
+      "alpha": "0.25"
+    }, {
+      "xValue": "0",
+      "yValue": "18px",
+      "blur": "36px",
+      "spread": "-18px",
+      "color": "#000000",
+      "alpha": "0.3"
+    }, {
+      "xValue": "0",
+      "yValue": "-12px",
+      "blur": "36px",
+      "spread": "-8px",
+      "color": "#000000",
+      "alpha": "0.025"
+    }]
+  }, {
+    "shadowTitle": "Stripe 003",
+    "shadowCategoryID": "2",
+    "shadowSubCategoryID": "3",
+    "layers": [{
+      "xValue": "0",
+      "yValue": "13px",
+      "blur": "27px",
+      "spread": "-5px",
+      "color": "#32325D",
+      "alpha": "0.25"
+    }, {
+      "xValue": "0",
+      "yValue": "8px",
+      "blur": "16px",
+      "spread": "-8px",
+      "color": "#000000",
+      "alpha": "0.3"
+    }, {
+      "xValue": "0",
+      "yValue": "-6px",
+      "blur": "16px",
+      "spread": "-6px",
+      "color": "#000000",
+      "alpha": "0.025"
+    }]
+  },
   {
     "shadowTitle": "Stripe 004",
     "shadowCategoryID": "2",

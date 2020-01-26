@@ -27,24 +27,30 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
   const { isSidebarOpen } = useSidebar();
 
   return (
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Helmet
-          title="Box Shadows"
-          meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" },
-          ]}
-        />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Helmet
+        title="Box Shadows"
+        meta={[
+          {
+            name: "description",
+            content: "Collection of CSS box shadows for your next project",
+          },
+          {
+            name: "keywords",
+            content: "css, box-shadow, collection, project, design",
+          },
+        ]}
+      />
 
-        {isSidebarOpen && <Overlay />}
+      {isSidebarOpen && <Overlay />}
 
-        <Header />
+      <Header />
 
-        <Sidebar />
+      <Sidebar />
 
-        <main>{children}</main>
-      </ThemeProvider>
+      <main>{children}</main>
+    </ThemeProvider>
   )
 };
 
