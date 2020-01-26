@@ -6,8 +6,9 @@ export const ShadowItemWrapper = styled.div<{
   boxShadowStyle: string | undefined
 }>`
   box-shadow: ${({ boxShadowStyle }) => boxShadowStyle};
-  border-radius: 4px;
+  border-radius: 5px;
   position: relative;
+  border: 2px solid #eee;
 
   .shadowitem__dotgroup {
     display: flex;
@@ -22,7 +23,7 @@ export const ShadowItemWrapper = styled.div<{
       margin-right: ${theme.space[2]};
 
       &.carousel__dot--selected {
-        opacity: 0.8;
+      opacity: 0.8;
       }
     }
   }
@@ -34,8 +35,9 @@ export const TitleWrapper = styled.div`
   align-items: center;
   padding: ${theme.space[3]} ${theme.space[3]} calc(${theme.space[3]} - 3px) ${theme.space[3]};
   background: #F1F1F1;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-bottom: 2px solid #eee;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 `
 export const CategoryLogo = styled.img`
   min-width: 15px;

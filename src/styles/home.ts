@@ -35,7 +35,7 @@ export const HomeWrapper = styled.div`
   min-height: 100vh;
 
   @media ${theme.breakpoints.up.lg} {
-    margin-left: 300px;
+    margin-left: 280px;
   }
 `
 

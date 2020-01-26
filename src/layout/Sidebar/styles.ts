@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import color from "color";
 import theme from "../../theme";
 
 export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
@@ -13,12 +14,12 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   align-items: flex-start;
   position: fixed;
   top: ${theme.space[3]};
-  width: 300px;
+  width: 280px;
   transform: ${({ isSidebarOpen }) => isSidebarOpen ? "translateX(0)" : "translateX(-300px)"};
   transition: all 200ms ease-in-out;
   z-index: 4;
-  /* border-top: 2px solid black;
-  border-right: 2px solid black; */
+  border-top: 2px solid ${color(theme.palette.primary).darken(0.2).hex().toString()};
+  border-right: 2px solid ${color(theme.palette.primary).darken(0.2).hex().toString()};
   border-top-right-radius: 6px;
 
   &::-webkit-scrollbar {
