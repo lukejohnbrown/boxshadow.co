@@ -1,4 +1,5 @@
 import React, { ErrorInfo } from "react";
+import { ErrorAlert } from "./components";
 
 type ErrorBoundaryProps = {
   children: React.ReactNode
@@ -15,8 +16,7 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    this.setState({ error })
-    console.log(`in boundary ${error}`);
+    this.setState({ error });
     Sentry.configureScope(scope => {
       Object.keys(errorInfo).forEach(key => {
         scope.setExtra(key, errorInfo[key])
@@ -26,15 +26,11 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
   }
 
   render() {
-    if (this.state.error) {
-      return (
-        <>
-          <p>Whoops, something went wrong!</p>
-          {this.props.children};
-        </>
-      )
-    } else {
-      return this.props.children;
-    }
+    return (
+      <>
+        {this.state.error && <ErrorAlert />}
+        {this.props.children}
+      </>
+    )
   }
 }

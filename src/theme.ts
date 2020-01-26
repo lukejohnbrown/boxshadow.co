@@ -12,8 +12,8 @@ const palette = {
     [900]: "#1A202C",
   },
   black: "#333333",
-  blue: "rgba(52,35,202,1.00)",
   primary: "#12664F",
+  error: "#900000",
 }
 
 const sizes = ["640px", "768px", "1024px", "1280px", "1420px", "1650px"]
@@ -52,9 +52,9 @@ const fontSize = {
 
 type Theme = {
   palette: {
-    blue: string;
     black: string;
     primary: string;
+    error: string;
     grey: {
       [key: string]: string,
     },

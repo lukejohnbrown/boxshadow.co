@@ -6,4 +6,5 @@ export { default as ShadowsContainer } from "./ShadowsContainer";
 export { default as Button } from "./Button";
 export { default as ResetButton } from "./ResetButton";
 export { default as Header } from "./Header";
+export { default as ErrorAlert } from "./ErrorAlert";
 
