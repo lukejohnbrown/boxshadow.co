@@ -8,8 +8,8 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   background: ${theme.palette.primary};
   min-height: calc(100vh - ${theme.space[3]});
   max-height: 100%;
-  overflow: scroll;
   display: flex;
+  overflow: auto;
   flex-direction: column;
   align-items: flex-start;
   position: fixed;

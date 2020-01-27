@@ -34,9 +34,11 @@ export const ShadowsContainerHint = styled.span`
   margin-top: ${theme.space[1]};
   line-height: 1.2;
   font-weight: 400;
+  font-size: ${theme.fontSize[0]};
 
   @media (min-width: 600px) {
     margin-top: -5px;
+    font-size: 1.2rem;
   }
 
   @media ${theme.breakpoints.up.lg} {
