@@ -14,12 +14,13 @@ import {
 } from "../styles/home"
 
 const Home: React.FC<PageRendererProps> = ({ location }) => {
-  const { toggleSidebar } = useSidebar()
   const {
     setCategoryFilters,
     setSubCategoryFilters,
     setCategoryFiltersTouched,
     setSubCategoryFiltersTouched,
+    categoryFilters,
+    categoryFiltersTouched
   } = useFilters()
 
   const resetCategories = () => setCategoryFilters([])
@@ -36,7 +37,7 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
         setCategoryFiltersTouched(true)
         setCategoryFilters(queryParams.categories.split(","))
       } else {
-        resetCategories()
+        resetCategories();
       }
 
       if (queryParams.subCategories) {
@@ -50,6 +51,8 @@ const Home: React.FC<PageRendererProps> = ({ location }) => {
     if (!location.search) {
       resetCategories()
       resetSubCategories()
+      setSubCategoryFiltersTouched(false);
+      setCategoryFiltersTouched(false)
     }
   }, [location.search])
 
