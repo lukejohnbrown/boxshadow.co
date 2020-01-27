@@ -78,7 +78,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-fathom",
       options: {
-        trackingUrl: "cdn.usefathom.co",
+        trackingUrl: "https://cdn.usefathom.com",
         siteId: process.env.FATHOM_SITE_ID,
         whitelistHostnames: ["boxshadow.co"],
       },
