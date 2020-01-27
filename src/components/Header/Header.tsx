@@ -6,7 +6,7 @@ import { HeaderWrapper, LogoText, ButtonWrapper } from "./styles"
 const Header = () => {
   return (
     <HeaderWrapper>
-      <LogoText>boxshadow.co</LogoText>
+      <LogoText>boxshadows.co</LogoText>
       {/* <ButtonWrapper>
         <Button onClick={() => {}}>Suggest shadow</Button>
       </ButtonWrapper> */}
