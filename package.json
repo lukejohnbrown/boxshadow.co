@@ -35,6 +35,7 @@
     "query-string": "^6.10.0",
     "react": "^16.12.0",
     "react-copy-to-clipboard": "^5.0.2",
+    "react-custom-scroll": "^4.1.5",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
