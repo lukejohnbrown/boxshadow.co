@@ -10834,6 +10834,11 @@ react-copy-to-clipboard@^5.0.2:
     copy-to-clipboard "^3"
     prop-types "^15.5.8"
 
+react-custom-scroll@^4.1.5:
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/react-custom-scroll/-/react-custom-scroll-4.1.5.tgz#16eef65d1b14b62341231a1103de8045f4a405b6"
+  integrity sha512-l4cSVyp3EPuK9GC5nHqJbWZ3okzf8RV9rVZFR9tf+fM5G28a5zEcbMuXEQ1SwafqZXkgHIgXwuWVIm/NsMfknQ==
+
 react-custom-scrollbars@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/react-custom-scrollbars/-/react-custom-scrollbars-4.2.1.tgz#830fd9502927e97e8a78c2086813899b2a8b66db"

@@ -36,7 +36,7 @@ export const BurgerWrapper = styled.button`
     display: none;
   }
 
-  transform: translateY(2px);
+  transform: translateY(3px);
 
   svg {
     display: flex;

@@ -41,6 +41,7 @@ export const Logo = styled.img`
   margin: ${theme.space[5]} ${theme.space[4]} ${theme.space[5]} ${theme.space[4]};
 `;
 
+export const Filters = styled.div``;
 
 export const FilterBlock = styled.div`
   margin-bottom: ${theme.space[7]};
@@ -70,6 +71,7 @@ export const InnerWrapper = styled.div`
   padding: ${theme.space[5]} ${theme.space[4]} ${theme.space[3]} ${theme.space[4]};
   display: flex;
   flex-direction: column;
+  overflow: scroll;
   position: relative;
   justify-content: space-between;
   height: 100%;
@@ -81,12 +83,4 @@ export const AboutBlockWrapper = styled.article`
   @media ${theme.breakpoints.down.lg} {
     display: none;
   }
-
-  margin-top: ${theme.space[6]};
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  bottom: 0;
-  padding: 0 ${theme.space[4]} ${theme.space[3]} ${theme.space[4]};
-  width: 280px;
 `
