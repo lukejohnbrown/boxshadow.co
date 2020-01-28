@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-typescript",
-  "description": "boxshadow.co",
+  "description": "boxshadows.co",
   "version": "1.0.0",
   "dependencies": {
     "@reach/router": "^1.2.1",

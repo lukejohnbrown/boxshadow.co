@@ -50,7 +50,7 @@ module.exports = {
         logo: "./src/images/favicon.png",
 
         // WebApp Manifest Configuration
-        appName: "boxshadow.co", // Inferred with your package.json
+        appName: "boxshadows.co", // Inferred with your package.json
         appDescription: "Collection of CSS box shadows for your next project",
         developerName: "Luke Brown",
         developerURL: "https://lukebrown.io",

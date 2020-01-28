@@ -6,3 +6,4 @@ export * from "./getShadowCountForCategory";
 export * from "./getShadowCountForSubCategory";
 export * from "./getAllCategoryIDs";
 export * from "./getAllSubCategoryIDs"
+export * from "./trackFathomGoal"

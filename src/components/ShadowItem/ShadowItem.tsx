@@ -16,7 +16,11 @@ import {
   SubCategoriesJson,
   ShadowsJsonLayers,
 } from "../../types/graphql"
-import { constructBoxShadowStyle, getSubCategoryByID } from "../../utils"
+import {
+  constructBoxShadowStyle,
+  getSubCategoryByID,
+  trackFathomGoal,
+} from "../../utils"
 
 const ShadowItem: React.FC<ShadowsJson> = ({
   shadowTitle,
@@ -54,7 +58,7 @@ const ShadowItem: React.FC<ShadowsJson> = ({
           text={`box-shadow: ${boxShadowStyle};`}
           onCopy={() => setCopied(true)}
         >
-          <CopyButton copied={copied} onClick={fathom('trackGoal', 'GHXPZYYC', 0)}>
+          <CopyButton copied={copied} onClick={trackFathomGoal('GHXPZYYC')}>
             {copied ? "CSS Copied 🥳" : "Copy CSS"}
           </CopyButton>
         </CopyToClipboard>

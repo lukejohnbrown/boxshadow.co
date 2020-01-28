@@ -14,7 +14,7 @@ import { ShadowLayerTitle } from "./styles";
 import ShadowStats from "./ShadowStats";
 
 type StatsCarouselProps = {
-  shadowLayers: ShadowsJsonLayers[]
+  shadowLayers: ShadowsJsonLayers[] | null
 }
 
 const StatsCarousel: React.FC<StatsCarouselProps> = ({ shadowLayers }) => {

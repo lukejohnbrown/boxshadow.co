@@ -83,83 +83,79 @@ const Sidebar: React.FC<SidebarProps> = () => {
   }, [selectedCategories, selectedSubCategories]);
 
   return (
-    <Scrollbars
-      style={{ width: 280 }}
-      autoHeight
-      autoHeightMin={0}
-      autoHeightMax={4000}
-    >
-      <SidebarWrapper isSidebarOpen={isSidebarOpen}>
-        <InnerWrapper>
-          {categories && shadows && (
-            <Filters>
-              <FilterBlock>
-                <FilterTitle>
-                  Shadow weight
-                  <ResetButton
-                    buttonTitle="Reset Category Filters"
-                    onClick={() =>
-                      setSelectedCategories(
-                        getAllCategoryIDs(categories) as string[]
-                      )
-                    }
-                  />
-                </FilterTitle>
-                {categories.map(({ categoryID, categoryTitle }) => (
-                  <FilterButton
-                    key={categoryID as string}
-                    id={categoryID as string}
-                    text={categoryTitle}
-                    onClick={handleCategoryClick}
-                    secondaryText={getShadowCountForCategory(
-                      shadows,
-                      categoryID
-                    ).toString()}
-                    isActive={
-                      !categoryFiltersTouched ||
-                      categoryFilters.includes(categoryID as string)
-                    }
-                  />
-                ))}
-              </FilterBlock>
-              <FilterBlock>
-                <FilterTitle>
-                  Shadow source
-                  <ResetButton
-                    buttonTitle="Reset Design Library Filters"
-                    onClick={() =>
-                      setSelectedSubCategories(
-                        getAllSubCategoryIDs(subCategories) as string[]
-                      )
-                    }
-                  />
-                </FilterTitle>
-                {subCategories.map(({ categoryID, categoryTitle, icon }) => (
-                  <FilterButton
-                    key={categoryID as string}
-                    id={categoryID as string}
-                    text={categoryTitle}
-                    onClick={handleSubCategoryClick}
-                    secondaryText={getShadowCountForSubCategory(
-                      shadows,
-                      categoryID
-                    ).toString()}
-                    icon={icon}
-                    isActive={
-                      !subCategoryFiltersTouched ||
-                      subCategoryFilters.includes(categoryID as string)
-                    }
-                  />
-                ))}
-              </FilterBlock>
-            </Filters>
-          )}
-          <AboutBlockWrapper>
-            <AboutBlock />
-          </AboutBlockWrapper>
-        </InnerWrapper>
-      </SidebarWrapper>
-    </Scrollbars>
+    <SidebarWrapper isSidebarOpen={isSidebarOpen}>
+      <InnerWrapper>
+        {categories && shadows && (
+          <Scrollbars
+            style={{ height: "calc(100vh - 350px) "}}
+            width={280}
+          >
+            <FilterBlock>
+              <FilterTitle>
+                Shadow weight
+                <ResetButton
+                  buttonTitle="Reset Category Filters"
+                  onClick={() =>
+                    setSelectedCategories(
+                      getAllCategoryIDs(categories) as string[]
+                    )
+                  }
+                />
+              </FilterTitle>
+              {categories.map(({ categoryID, categoryTitle }) => (
+                <FilterButton
+                  key={categoryID as string}
+                  id={categoryID as string}
+                  text={categoryTitle}
+                  onClick={handleCategoryClick}
+                  secondaryText={getShadowCountForCategory(
+                    shadows,
+                    categoryID
+                  ).toString()}
+                  isActive={
+                    !categoryFiltersTouched ||
+                    categoryFilters.includes(categoryID as string)
+                  }
+                />
+              ))}
+            </FilterBlock>
+            <FilterBlock>
+              <FilterTitle>
+                Shadow source
+                <ResetButton
+                  buttonTitle="Reset Design Library Filters"
+                  onClick={() =>
+                    setSelectedSubCategories(
+                      getAllSubCategoryIDs(subCategories) as string[]
+                    )
+                  }
+                />
+              </FilterTitle>
+              {subCategories.map(({ categoryID, categoryTitle, icon }) => (
+                <FilterButton
+                  key={categoryID as string}
+                  id={categoryID as string}
+                  text={categoryTitle}
+                  onClick={handleSubCategoryClick}
+                  secondaryText={getShadowCountForSubCategory(
+                    shadows,
+                    categoryID
+                  ).toString()}
+                  icon={icon}
+                  isActive={
+                    !subCategoryFiltersTouched ||
+                    subCategoryFilters.includes(categoryID as string)
+                  }
+                />
+              ))}
+            </FilterBlock>
+          </Scrollbars>
+        )}
+        <AboutBlockWrapper>
+          <AboutBlock />
+        </AboutBlockWrapper>
+      </InnerWrapper>
+    </SidebarWrapper>
   )
 };
 

@@ -9,7 +9,7 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   min-height: calc(100vh - ${theme.space[3]});
   max-height: 100%;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
@@ -66,12 +66,11 @@ export const FilterTitle = styled.h4`
   }
 `;
 
-export const Filters = styled.div``;
-
 export const InnerWrapper = styled.div`
   padding: ${theme.space[5]} ${theme.space[4]} ${theme.space[3]} ${theme.space[4]};
   display: flex;
   flex-direction: column;
+  position: relative;
   justify-content: space-between;
   height: 100%;
   width: 100%;
@@ -84,4 +83,10 @@ export const AboutBlockWrapper = styled.article`
   }
 
   margin-top: ${theme.space[6]};
-`;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 ${theme.space[4]} ${theme.space[3]} ${theme.space[4]};
+  width: 280px;
+`
