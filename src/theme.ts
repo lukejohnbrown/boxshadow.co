@@ -16,7 +16,7 @@ const palette = {
   error: "#900000",
 }
 
-const sizes = ["640px", "768px", "1024px", "1280px", "1420px", "1650px"]
+export const sizes = ["640px", "768px", "1024px", "1280px", "1420px", "1650px"]
 const breakpoints =  {
   up: {
     xs: `(min-width: ${sizes[0]})`,

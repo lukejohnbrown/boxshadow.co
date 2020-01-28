@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import xor from "lodash.xor";
-import CustomScroll from "react-custom-scroll"
+import { Scrollbars } from "react-custom-scrollbars"
 import { navigate } from "gatsby";
 import { useWindowSize } from "@react-hook/window-size"
 
+import { sizes as breakpoints } from "../../theme";
 import { FilterButton, ResetButton } from "../../components";
 import logo from "../../images/logo.svg";
 import { useSidebar } from "../../SidebarProvider";
@@ -15,8 +16,8 @@ import { CategoriesJson, SubCategoriesJson } from "../../types/graphql";
 import {
   FilterBlock,
   FilterTitle,
-  Filters,
   InnerWrapper,
+  Logo,
   SidebarWrapper,
   AboutBlockWrapper,
 } from "./styles"
@@ -83,14 +84,20 @@ const Sidebar: React.FC<SidebarProps> = () => {
     navigate(`/?${queryString}`);
   }, [selectedCategories, selectedSubCategories]);
 
-  const [windowWidth] = useWindowSize();
-  console.log(windowWidth);
+  const [windowWidth, windowHeight] = useWindowSize()
 
   return (
     <SidebarWrapper isSidebarOpen={isSidebarOpen}>
       <InnerWrapper>
         {categories && shadows && (
-          <Filters>
+          <Scrollbars
+            autoHide
+            style={{
+              height:
+                windowWidth < 1024 ? "100vh" : "calc(100vh - 350px)",
+            }}
+            width={280}
+          >
             <FilterBlock>
               <FilterTitle>
                 Shadow weight
@@ -150,11 +157,11 @@ const Sidebar: React.FC<SidebarProps> = () => {
                 />
               ))}
             </FilterBlock>
-            <AboutBlockWrapper>
-              <AboutBlock />
-            </AboutBlockWrapper>
-          </Filters>
+          </Scrollbars>
         )}
+        <AboutBlockWrapper>
+          <AboutBlock />
+        </AboutBlockWrapper>
       </InnerWrapper>
     </SidebarWrapper>
   )
