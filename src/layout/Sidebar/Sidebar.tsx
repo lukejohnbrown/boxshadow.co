@@ -17,7 +17,6 @@ import {
   Logo,
   SidebarWrapper,
   AboutBlockWrapper,
-  Filters,
 } from "./styles"
 
 export type SidebarProps = {
@@ -87,7 +86,8 @@ const Sidebar: React.FC<SidebarProps> = () => {
       <InnerWrapper>
         {categories && shadows && (
           <Scrollbars
-            style={{ height: "calc(100vh - 350px) "}}
+            autoHide
+            style={{ height: "calc(100vh - 350px)" }}
             width={280}
           >
             <FilterBlock>
