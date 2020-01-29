@@ -6,10 +6,10 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   width: 100%;
   display: block;
   background: ${theme.palette.primary};
-  min-height: calc(100vh - ${theme.space[3]});
-  max-height: 100%;
+  height: calc(100vh - ${theme.space[3]});
+  padding: ${theme.space[5]} ${theme.space[4]} ${theme.space[3]} ${theme.space[4]};
   display: flex;
-  overflow: hidden;
+  overflow: auto;
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
@@ -29,7 +29,7 @@ export const SidebarWrapper = styled.aside<{ isSidebarOpen: boolean; }>`
   @media ${theme.breakpoints.up.lg} {
     transform: none;
     top: ${theme.space[7]};
-    min-height: calc(100vh - ${theme.space[7]});
+    height: calc(100vh - ${theme.space[7]});
   }
 `;
 
@@ -68,13 +68,10 @@ export const FilterTitle = styled.h4`
 `;
 
 export const InnerWrapper = styled.div`
-  padding: ${theme.space[5]} ${theme.space[4]} ${theme.space[3]} ${theme.space[4]};
   display: flex;
   flex-direction: column;
-  overflow: scroll;
   position: relative;
   justify-content: space-between;
-  height: 100%;
   width: 100%;
   flex: 1;
 `;
