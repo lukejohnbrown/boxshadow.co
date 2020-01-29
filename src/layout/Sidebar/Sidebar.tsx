@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import xor from "lodash.xor";
-import CustomScroll from "react-custom-scroll"
 import { navigate } from "gatsby";
-import { useWindowSize } from "@react-hook/window-size"
 
 import { FilterButton, ResetButton } from "../../components";
 import logo from "../../images/logo.svg";
@@ -82,9 +80,6 @@ const Sidebar: React.FC<SidebarProps> = () => {
 
     navigate(`/?${queryString}`);
   }, [selectedCategories, selectedSubCategories]);
-
-  const [windowWidth] = useWindowSize();
-  console.log(windowWidth);
 
   return (
     <SidebarWrapper isSidebarOpen={isSidebarOpen}>

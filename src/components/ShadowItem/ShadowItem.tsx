@@ -58,7 +58,10 @@ const ShadowItem: React.FC<ShadowsJson> = ({
           text={`box-shadow: ${boxShadowStyle};`}
           onCopy={() => setCopied(true)}
         >
-          <CopyButton copied={copied} onClick={trackFathomGoal('GHXPZYYC')}>
+          <CopyButton
+            copied={copied}
+            onClick={() => trackFathomGoal("J7U2OUYM")}
+          >
             {copied ? "CSS Copied 🥳" : "Copy CSS"}
           </CopyButton>
         </CopyToClipboard>
